@@ -1,0 +1,32 @@
+{
+  "background": {
+    "file": "assets/scene-approved.png",
+    "sha256": "bd359f0d98a2d3ac20ce246010a160492883dd21d3c494ebd765f85e3fbd9622",
+    "source": "Contributor-provided image",
+    "authorization": "Contributor confirmed the right to authorize public use on 2026-10-02",
+    "processing": "Original file copied byte-for-byte; No background redraw; sidebar portrait removed"
+  },
+  "materials": {
+    "service": "OpenAI image_gen",
+    "files": [
+      "action-plaque.png",
+      "dossier-frame.png",
+      "envelope-blank-v4.webp",
+      "field-bed.png",
+      "icon-codex.webp",
+      "icon-ledger.webp",
+      "icon-orbit.webp",
+      "icon-quill.webp",
+      "icon-seal.webp",
+      "ledger-v4.webp",
+      "logo.webp",
+      "nav-invitation.png",
+      "quarter-crest.png",
+      "salon-v4.webp",
+      "sapphire-toggle.png",
+      "waxseal-v4.webp",
+      "workspace-folio.png"
+    ],
+    "description": "Independently generated interface ornaments, reused from the contributor-owned Midnight Contract UI material set; quarter crest and invitation plate generated for this skin"
+  }
+}

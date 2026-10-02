@@ -1,0 +1,30 @@
+name: Skin package checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install package manager
+        run: npm install --global pnpm@11.24.0
+      - name: Install locked workspace
+        run: pnpm install --frozen-lockfile --ignore-scripts
+      - name: JavaScript syntax
+        run: pnpm typecheck
+      - name: Validator regression tests
+        run: pnpm test
+      - name: Local documentation links
+        run: pnpm docs:check
+      - name: Skin files and original artwork integrity
+        run: pnpm check

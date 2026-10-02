@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.linxin666.org/dsh-skin/v2.json",
+  "skinManifestVersion": 2,
+  "id": "midnight-contract-city",
+  "name": "零点契约 · 夜城",
+  "nameEn": "Midnight Contract · Night City",
+  "version": "0.1.1",
+  "author": "Theater-ahyeon",
+  "tagline": "龙纹契约簿、四分之一生命徽章、鸦羽信笺与绯红封蜡",
+  "description": "以路鸣泽与龙族的契约意象定制 DSH：夜城原图、Deepseek Harness 品牌栏、黑金龙纹侧栏、金属徽记、绯红邀约底板、蓝宝石信封输入框和羊皮纸设置入口。亮暗主题保留真实会话、模型配置和工具交互。",
+  "tags": [
+    "midnight",
+    "contract",
+    "dragon",
+    "gold",
+    "ornate",
+    "leather"
+  ],
+  "accent": "#caa775",
+  "order": 1053,
+  "preview": {
+    "light": "preview/light.jpg",
+    "dark": "preview/dark.jpg"
+  },
+  "contributes": {
+    "stylesheet": "skin.css",
+    "patches": "patches.css",
+    "backgroundMedia": {
+      "light": {
+        "type": "image",
+        "src": "assets/scene-approved.png",
+        "scrim": "linear-gradient(90deg, #12131d08 20%, #12131d30 75%, #12131d66)"
+      },
+      "dark": {
+        "type": "image",
+        "src": "assets/scene-approved.png",
+        "scrim": "linear-gradient(90deg, #12131d15 20%, #12131d40 75%, #12131d80)"
+      }
+    }
+  },
+  "license": "Apache-2.0",
+  "noticeUrl": "https://github.com/Theater-ahyeon/midnight-contract-skins/blob/main/skins/midnight-contract-city/NOTICE.md",
+  "sourceUrl": "https://github.com/Theater-ahyeon/midnight-contract-skins/tree/main/skins/midnight-contract-city",
+  "attribution": "Theater-ahyeon. Background supplied by the contributor with permission to redistribute; UI materials generated with OpenAI image_gen. See NOTICE.md."
+}

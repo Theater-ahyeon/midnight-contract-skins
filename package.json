@@ -1,0 +1,18 @@
+{
+  "name": "midnight-contract-skins",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "description": "Two self-contained Midnight Contract skins for the Deepseek Harness skin-center v2 loader.",
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@11.24.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "typecheck": "node --check scripts/check.mjs && node --check scripts/check.test.mjs",
+    "test": "node --test scripts/check.test.mjs",
+    "docs:check": "node scripts/check.mjs --docs",
+    "check": "node scripts/check.mjs"
+  }
+}

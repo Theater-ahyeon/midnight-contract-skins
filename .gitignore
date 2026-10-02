@@ -1,0 +1,12 @@
+node_modules/
+.pnpm-store/
+.cache/
+coverage/
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+skin-center-active.json

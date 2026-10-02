@@ -1,0 +1,441 @@
+{
+  "officialHostVersion": "0.1.7-rc.1",
+  "runtime": "real isolated DSH Web GUI",
+  "skin": "midnight-contract-city",
+  "date": "2026-10-02",
+  "cases": [
+    {
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "steps": [
+        {
+          "name": "activate-and-theme",
+          "status": "pass"
+        },
+        {
+          "name": "root-layout",
+          "status": "pass"
+        },
+        {
+          "name": "composer-draft",
+          "status": "pass"
+        },
+        {
+          "name": "permission-menu",
+          "status": "pass"
+        },
+        {
+          "name": "model-menu",
+          "status": "pass"
+        },
+        {
+          "name": "settings",
+          "status": "pass"
+        },
+        {
+          "name": "developer-switch",
+          "status": "pass"
+        },
+        {
+          "name": "models-settings",
+          "status": "pass"
+        },
+        {
+          "name": "sidebar-collapse",
+          "status": "pass"
+        },
+        {
+          "name": "details-expand",
+          "status": "pass"
+        }
+      ],
+      "alignment": {
+        "wordmark": "\"Deepseek Harness\"",
+        "portrait": "none",
+        "rowHeight": 64,
+        "wordmarkFits": true,
+        "labelWidth": 46.359375,
+        "labelClearsActions": true,
+        "labelClearsSpine": true,
+        "labelInsidePlaque": true,
+        "centersAligned": true,
+        "duplicateGearHidden": true,
+        "settingsTextClearsRaven": true
+      }
+    },
+    {
+      "theme": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "name": "activate-and-theme",
+          "status": "pass"
+        },
+        {
+          "name": "root-layout",
+          "status": "pass"
+        },
+        {
+          "name": "composer-draft",
+          "status": "pass"
+        },
+        {
+          "name": "permission-menu",
+          "status": "pass"
+        },
+        {
+          "name": "model-menu",
+          "status": "pass"
+        },
+        {
+          "name": "settings",
+          "status": "pass"
+        },
+        {
+          "name": "developer-switch",
+          "status": "pass"
+        },
+        {
+          "name": "models-settings",
+          "status": "pass"
+        },
+        {
+          "name": "sidebar-collapse",
+          "status": "pass"
+        },
+        {
+          "name": "details-expand",
+          "status": "pass"
+        }
+      ],
+      "alignment": {
+        "wordmark": "\"Deepseek Harness\"",
+        "portrait": "none",
+        "rowHeight": 64,
+        "wordmarkFits": true,
+        "labelWidth": 46.359375,
+        "labelClearsActions": true,
+        "labelClearsSpine": true,
+        "labelInsidePlaque": true,
+        "centersAligned": true,
+        "duplicateGearHidden": true,
+        "settingsTextClearsRaven": true
+      }
+    },
+    {
+      "theme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "steps": [
+        {
+          "name": "activate-and-theme",
+          "status": "pass"
+        },
+        {
+          "name": "root-layout",
+          "status": "pass"
+        },
+        {
+          "name": "composer-draft",
+          "status": "pass"
+        },
+        {
+          "name": "permission-menu",
+          "status": "pass"
+        },
+        {
+          "name": "model-menu",
+          "status": "pass"
+        },
+        {
+          "name": "settings",
+          "status": "pass"
+        },
+        {
+          "name": "developer-switch",
+          "status": "pass"
+        },
+        {
+          "name": "models-settings",
+          "status": "pass"
+        },
+        {
+          "name": "sidebar-collapse",
+          "status": "pass"
+        },
+        {
+          "name": "details-expand",
+          "status": "pass"
+        }
+      ],
+      "alignment": {
+        "wordmark": "\"Deepseek Harness\"",
+        "portrait": "none",
+        "rowHeight": 64,
+        "wordmarkFits": true,
+        "labelWidth": 46.359375,
+        "labelClearsActions": true,
+        "labelClearsSpine": true,
+        "labelInsidePlaque": true,
+        "centersAligned": true,
+        "duplicateGearHidden": true,
+        "settingsTextClearsRaven": true
+      }
+    },
+    {
+      "theme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "steps": [
+        {
+          "name": "activate-and-theme",
+          "status": "pass"
+        },
+        {
+          "name": "root-layout",
+          "status": "pass"
+        },
+        {
+          "name": "composer-draft",
+          "status": "pass"
+        },
+        {
+          "name": "permission-menu",
+          "status": "pass"
+        },
+        {
+          "name": "model-menu",
+          "status": "pass"
+        },
+        {
+          "name": "settings",
+          "status": "pass"
+        },
+        {
+          "name": "developer-switch",
+          "status": "pass"
+        },
+        {
+          "name": "models-settings",
+          "status": "pass"
+        },
+        {
+          "name": "sidebar-collapse",
+          "status": "pass"
+        },
+        {
+          "name": "details-expand",
+          "status": "pass"
+        }
+      ],
+      "alignment": {
+        "wordmark": "\"Deepseek Harness\"",
+        "portrait": "none",
+        "rowHeight": 64,
+        "wordmarkFits": true,
+        "labelWidth": 46.359375,
+        "labelClearsActions": true,
+        "labelClearsSpine": true,
+        "labelInsidePlaque": true,
+        "centersAligned": true,
+        "duplicateGearHidden": true,
+        "settingsTextClearsRaven": true
+      }
+    }
+  ],
+  "pageErrors": 0,
+  "failedRequests": 0,
+  "restoration": [
+    {
+      "steps": [
+        {
+          "name": "restore-blue-fantasy",
+          "details": {
+            "skin": "blue-fantasy",
+            "composer": {
+              "tag": "div",
+              "class": "uV2eYG_card",
+              "role": null,
+              "label": null,
+              "rect": {
+                "x": 469.296875,
+                "y": 443.5,
+                "w": 774.390625,
+                "h": 114
+              },
+              "visible": true,
+              "withinViewport": true,
+              "centerHit": true,
+              "display": "flex",
+              "position": "relative",
+              "fg": "rgb(219, 226, 242)",
+              "bg": "rgb(26, 34, 56)",
+              "overflow": "visible",
+              "scrollWidth": 774,
+              "clientWidth": 774
+            },
+            "screenshot": "restored-blue-fantasy.png",
+            "staleMidnightStylesheets": 0
+          },
+          "status": "pass"
+        },
+        {
+          "name": "restore-stock",
+          "details": {
+            "skin": null,
+            "composer": {
+              "tag": "div",
+              "class": "uV2eYG_card",
+              "role": null,
+              "label": null,
+              "rect": {
+                "x": 469.296875,
+                "y": 443,
+                "w": 774.390625,
+                "h": 114
+              },
+              "visible": true,
+              "withinViewport": true,
+              "centerHit": true,
+              "display": "flex",
+              "position": "relative",
+              "fg": "rgb(249, 250, 251)",
+              "bg": "rgb(44, 44, 46)",
+              "overflow": "visible",
+              "scrollWidth": 774,
+              "clientWidth": 774
+            },
+            "screenshot": "restored-stock.png",
+            "staleMidnightStylesheets": 0
+          },
+          "status": "pass"
+        }
+      ]
+    }
+  ],
+  "originalRestored": true,
+  "conversation": {
+    "protocolFixture": true,
+    "realModelInference": false,
+    "externalModelCalls": 0,
+    "domInjection": false,
+    "actualReadonlyToolReceipt": true,
+    "temporaryProviderRemoved": true,
+    "dummyCredentialRemoved": true,
+    "originalVisualSelectionRestored": true,
+    "pageErrors": 0,
+    "cases": [
+      {
+        "theme": "light",
+        "width": 1440,
+        "horizontalOverflow": false,
+        "conversationScroll": {
+          "top": 4547,
+          "height": 5306,
+          "client": 759
+        },
+        "codeScroll": [
+          {
+            "class": "shiki css-variables",
+            "moved": 564,
+            "scrollWidth": 1230,
+            "clientWidth": 666
+          }
+        ],
+        "generatedMaterialsAsserted": true,
+        "screenshots": [
+          "preview/conversation-head-light.png",
+          "preview/conversation-code-light.png",
+          "preview/conversation-tail-light.png"
+        ]
+      },
+      {
+        "theme": "light",
+        "width": 390,
+        "horizontalOverflow": false,
+        "conversationScroll": {
+          "top": 7588,
+          "height": 8307,
+          "client": 719
+        },
+        "codeScroll": [
+          {
+            "class": "shiki css-variables",
+            "moved": 1017,
+            "scrollWidth": 1230,
+            "clientWidth": 213
+          }
+        ],
+        "generatedMaterialsAsserted": true,
+        "screenshots": [
+          "preview/mobile-conversation-head-light.png",
+          "preview/mobile-conversation-code-light.png",
+          "preview/mobile-conversation-tail-light.png"
+        ]
+      },
+      {
+        "theme": "dark",
+        "width": 1440,
+        "horizontalOverflow": false,
+        "conversationScroll": {
+          "top": 4547,
+          "height": 5306,
+          "client": 759
+        },
+        "codeScroll": [
+          {
+            "class": "shiki css-variables",
+            "moved": 564,
+            "scrollWidth": 1230,
+            "clientWidth": 666
+          }
+        ],
+        "generatedMaterialsAsserted": true,
+        "screenshots": [
+          "preview/conversation-head-dark.png",
+          "preview/conversation-code-dark.png",
+          "preview/conversation-tail-dark.png"
+        ]
+      },
+      {
+        "theme": "dark",
+        "width": 390,
+        "horizontalOverflow": false,
+        "conversationScroll": {
+          "top": 70616,
+          "height": 71319,
+          "client": 703
+        },
+        "codeScroll": [
+          {
+            "class": "shiki css-variables",
+            "moved": 1186,
+            "scrollWidth": 1230,
+            "clientWidth": 44
+          }
+        ],
+        "generatedMaterialsAsserted": true,
+        "screenshots": [
+          "preview/mobile-conversation-head-dark.png",
+          "preview/mobile-conversation-code-dark.png",
+          "preview/mobile-conversation-tail-dark.png"
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "No external model inference or streaming-provider compatibility test",
+    "Optional plugin rows absent in minimal profile",
+    "Automation does not establish human visual acceptance"
+  ]
+}
