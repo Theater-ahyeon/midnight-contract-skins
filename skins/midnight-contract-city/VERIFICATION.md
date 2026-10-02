@@ -14,11 +14,15 @@ Machine-readable evidence: [gui-verification.json](gui-verification.json). Scree
 
 ## Automated gates and boundaries
 
-Catalog/CSS safety (55 entries), hooks, typecheck, build and generated-lib drift checks pass. Script tests pass 27/27. The untouched dsh-web baseline passes typecheck and docs:check; dsh-skins has no docs:check command.
+Catalog/CSS safety (55 entries), hooks, typecheck, build and generated-lib drift checks pass. Script tests pass 27/27. The untouched dsh-web baseline passes local typecheck, its complete test suite and docs:check; dsh-skins has no docs:check command.
 
 The contribution's earlier [Ubuntu CI](https://github.com/zhu1090093659/dsh-skins/actions/runs/36917452138) passed all 776 tests and repository gates. Current branch checks and review status are on [PR #33](https://github.com/zhu1090093659/dsh-skins/pull/33/checks).
 
-Complete local tests remain environment-limited: Windows passes 775/776 with an existing file-symlink EPERM. Genuine Linux on task-only NTFS passes that symlink test and the previous mtime/cache assertions, but passes 775/776 with the original LRU scan's unchanged 30-second timeout. The dsh-web baseline retains two Windows symlink permission failures. No application source, assertion, timeout, clock or global setting was changed to conceal these failures. CI and local results are separate evidence.
+Complete local gates passed on 2026-10-02 in an isolated Debian 12 / Node 22.23.3 / pnpm 11.24.0 environment on native ext4, launched by WSL 3.0.1 with kernel 6.18.40.1. `pnpm test --maxWorkers=1` passed all 776 tests across 53 files in 22.16 seconds; all 27 script tests and the catalog, hooks, typecheck and build gates also passed. Before/after SHA-256 checks found zero changes in 249 contribution source, test, script, generated-library, lockfile and skin files at `451544867635db545cf3fc098df0b024fd05c6e0`.
+
+The unchanged dsh-web baseline at `c42e3d249ad150a4202355b5dd8be72d390602c5` passed typecheck in all 18 workspace projects, complete tests (3244 passed, 14 pre-existing skips) and docs:check in the same local environment. Its test command was `pnpm --workspace-concurrency=1 -r --no-bail test --maxWorkers=1`; worker counts were bounded, with original assertions and timeouts intact. Before/after SHA-256 checks found zero changes in 891 baseline source, test, script and dependency-contract files. Git, ssh-keygen, real device bindings and a read-only proc mount provide the tools and process metadata required by the original suites.
+
+Earlier local attempts are historical failures: Windows reported symlink EPERM, the older Linux environment reported immediate directory-mtime/cache failures, and Linux fixtures on NTFS exceeded the original 30-second LRU scan timeout. The repaired environment clears task-owned residue from a backed-up full WSL distribution, uses separate task-owned ext4 images and upgrades WSL through the official installer with the contributor's explicit approval. Source, assertions, timeouts and the clock were not changed, and no tests were manually skipped. Native Windows symlink policy remains unchanged. These local results are separate from Ubuntu CI evidence.
 
 External model inference, arbitrary provider streaming behavior and optional plugins absent from the minimal profile remain untested. Protocol-fixture captures establish actual UI rendering and tool execution, not model intelligence or provider compatibility. Automation does not imply user acceptance or perfect artistic equivalence.
 
@@ -26,7 +30,7 @@ External model inference, arbitrary provider streaming behavior and optional plu
 
 两版真实宿主覆盖亮暗、桌面／手机、设置、模型、菜单、开关、草稿、侧栏与详情，并验证默认／无皮肤恢复。另有 8 组真实消息、代码、表格与只读工具回执检查，确认生图材质生效、长内容可滚动且页面不横溢出。对话明确标注本地协议 Fixture，经过官方 Agent 与真实工具，不代表真实模型推理；临时路由及虚拟测试凭据已清理。原背景哈希一致。
 
-本地全套测试保留平台权限和文件扫描超时，未通过改测试掩盖。Ubuntu CI 全套通过与本地未全绿分别记录。外部推理、未安装插件及用户视觉验收属于剩余验证边界。
+2026-10-02 修复运行环境后，本地原生 ext4 / Node 22 全套皮肤测试 776/776、脚本测试 27/27 通过；未修改的 dsh-web 基线完成全部 18 个工作区的类型检查、完整测试（3244 通过，14 项上游原有跳过）和文档检查。测试前后分别核验 249 与 891 个文件，源码、断言、超时及素材哈希一致。旧的 Windows 权限、目录时间戳和 NTFS 扫描失败保留为历史记录；没有改测试或时钟掩盖问题，也没有改变 Windows 原生符号链接策略。经授权升级 WSL 并使用隔离 ext4 环境后，本地门禁已完成，CI 仍单独记录。外部推理、未安装插件及用户视觉验收属于剩余验证边界。
 
 ## 0.1.1 alignment revision
 
