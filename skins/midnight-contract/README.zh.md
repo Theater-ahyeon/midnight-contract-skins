@@ -37,7 +37,13 @@
 
 ## 素材与许可
 
-详见[素材声明](NOTICE.md)、[来源记录](asset-provenance.json)、[生成提示词](generation-prompts.json)及仓库 [Apache-2.0 许可](LICENSE)。背景由贡献者提供并确认公开再分发权，文件哈希记录在来源清单中；左上角头像区域已移除。包中不包含此前的 Steam 创意工坊角色壁纸。UI 装饰由 OpenAI image_gen 生成，不主张龙族 IP 的所有权或官方背书。
+本皮肤为《龙族》路鸣泽角色的非官方同人主题，原著作者／原著权利人为江南（杨治）；原著、角色及相关授权改编的权利归江南及各自原权利人所有。本皮肤及所含图片仅供个人非商业使用，不得用于商业用途。该同人创作与 dsh-skins 本仓库、仓库维护者、Deepseek Harness 及《龙族》权利人无关联，非官方出品且无官方背书；仓库收录或托管不表示关联或授权。权利人提出异议即移除相关素材，并配合仓库下架。AI 生成及贡献者来源声明不等同于取得《龙族》角色或作品的官方授权。
+
+Apache-2.0 LICENSE 仅适用于独立编写的 CSS 与代码，不适用于背景图、生成的 UI 图片及包含这些图片的预览截图；这些图片按本声明仅供个人非商业使用。不会授予作品、角色或第三方权益。清单中的图片许可标为 LicenseRef-Personal-NonCommercial-Fan-Art，并指向本 NOTICE。
+
+背景创作分类：贡献者自行通过 Codex 生图生成的同人插画，2026-10-03 已直接确认；UI 图片使用 OpenAI image_gen 生成。详见[来源声明](SOURCE-DECLARATION.md)、[素材声明](NOTICE.md)、[来源清单](asset-provenance.json)及[生成提示词](generation-prompts.json)，包含原图哈希、现有记录与缺失信息边界。旧 Steam 创意工坊素材不在分发包中。
+
+原作作者核验：[《龙族》小说官方账号](https://www.weibo.com/cassellcollege?tabtype=newVideo)、[江南作者访谈](https://www.chinawriter.com.cn/n1/2018/0523/c405057-30006739.html)。这些链接用于署名核验，不是图片来源或授权凭证。
 
 ## 开发与验证
 

@@ -38,8 +38,9 @@
       }
     }
   },
-  "license": "Apache-2.0",
+  "license": "LicenseRef-Personal-NonCommercial-Fan-Art",
   "noticeUrl": "https://github.com/Theater-ahyeon/midnight-contract-skins/blob/main/skins/midnight-contract/NOTICE.md",
   "sourceUrl": "https://github.com/Theater-ahyeon/midnight-contract-skins/tree/main/skins/midnight-contract",
-  "attribution": "Theater-ahyeon. Background supplied by the contributor with permission to redistribute; UI materials generated with OpenAI image_gen. See NOTICE.md."
+  "attribution": "Lu Mingze from Dragon Raja by Jiang Nan (Yang Zhi); rights remain with Jiang Nan and respective original rights holders. AI-generated fan artwork created by Theater-ahyeon through Codex. Personal non-commercial use only; unofficial and not affiliated with dsh-skins; remove on rights-holder objection. Apache-2.0 covers CSS/code only. See NOTICE.md.",
+  "licenseUrl": "https://github.com/Theater-ahyeon/midnight-contract-skins/blob/main/skins/midnight-contract/NOTICE.md"
 }

@@ -118,7 +118,7 @@ export function checkSkin(root, {
   assert(/^[a-z][a-z0-9-]{0,31}$/.test(manifest.id), 'Invalid v2 skin id');
   assert.equal(manifest.id, expectedId, 'Manifest id must match the skin directory');
   assert(/^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?$/.test(manifest.version), 'Invalid semantic version');
-  assert.equal(manifest.license, 'Apache-2.0', 'Skin license must retain its Apache-2.0 declaration');
+  assert.equal(manifest.license, 'LicenseRef-Personal-NonCommercial-Fan-Art', 'Artwork license must declare personal non-commercial fan-art use; Apache-2.0 covers code only');
   const contributes = record(manifest.contributes, 'manifest.contributes');
   for (const key of Object.keys(contributes)) {
     assert(['stylesheet', 'patches', 'backgroundMedia'].includes(key), 'Unsupported or executable contribution in pure asset pack: ' + key);

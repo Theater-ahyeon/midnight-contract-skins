@@ -26,7 +26,7 @@ function fixture(t) {
     nameEn: 'Fixture Skin',
     version: '0.1.0',
     author: 'Fixture Author',
-    license: 'Apache-2.0',
+    license: 'LicenseRef-Personal-NonCommercial-Fan-Art',
     preview: { light: 'preview/light.jpg', dark: 'preview/dark.jpg' },
     contributes: {
       stylesheet: 'skin.css',
@@ -63,6 +63,13 @@ test('accepts a self-contained asset fixture with unchanged original artwork', (
   const result = pack.verify();
   assert.equal(result.backgroundSha256, pack.hash);
   assert.equal(result.cssAssets, 1);
+});
+
+test('rejects a blanket commercial code license on the fan artwork package', (t) => {
+  const pack = fixture(t);
+  pack.manifest.license = 'Apache-2.0';
+  pack.save();
+  assert.throws(pack.verify, /Artwork license must declare personal non-commercial/);
 });
 
 test('rejects a manifest trying to load an existing stylesheet outside its skin', (t) => {

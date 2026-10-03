@@ -37,7 +37,13 @@ The skin has no executable hook, remote asset, model behavior change, credential
 
 ## Assets and license
 
-See [NOTICE](NOTICE.md), [asset provenance](asset-provenance.json), [generation prompts](generation-prompts.json) and the repository [Apache-2.0 license](LICENSE). The background was supplied by the contributor, who confirmed public redistribution rights. The original file hash is recorded. The sidebar has no character portrait. Old Steam Workshop character art is excluded. Independent UI ornaments were generated using OpenAI image_gen; franchise ownership and official endorsement are not claimed.
+This is an unofficial fan skin depicting Lu Mingze (路鸣泽) from Dragon Raja (《龙族》), originally written by Jiang Nan (江南, Yang Zhi / 杨治). The original novel and character rights belong to Jiang Nan and the respective original rights holders; all rights in the work, character and any applicable licensed adaptations remain with their respective rights holders. The artwork and this character-themed skin are for personal, non-commercial use only. They are not affiliated with, endorsed by or officially produced by the dsh-skins repository, its maintainers, Deepseek Harness, or the Dragon Raja rights holders. Inclusion or hosting does not imply affiliation. If a rights holder objects, the contributor will promptly remove the affected artwork and cooperate with repository takedown. AI generation and a contributor declaration do not constitute permission from the franchise rights holders.
+
+The Apache-2.0 LICENSE applies to independently authored CSS and code only. Backgrounds, generated UI images and previews containing that artwork are governed by the personal non-commercial artwork notice here, not an Apache-2.0 commercial-use grant. No franchise, character or third-party rights are granted. The manifest artwork license is LicenseRef-Personal-NonCommercial-Fan-Art and points to this NOTICE.
+
+Background creation category: AI-generated fan artwork created by the contributor using Codex image generation, confirmed on 2026-10-03. UI images were generated through OpenAI image_gen. See [source declaration](SOURCE-DECLARATION.md), [NOTICE](NOTICE.md), [asset provenance](asset-provenance.json) and [generation prompts](generation-prompts.json) for file identities, evidence and limits. Older Steam Workshop artwork is excluded.
+
+[Dragon Raja novel official account](https://www.weibo.com/cassellcollege?tabtype=newVideo), [Jiang Nan author interview](https://www.chinawriter.com.cn/n1/2018/0523/c405057-30006739.html). These links identify the original work and author; they are not image sources or a license.
 
 ## Development
 

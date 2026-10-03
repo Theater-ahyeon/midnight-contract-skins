@@ -57,7 +57,9 @@ cp -R skins/midnight-contract skins/midnight-contract-city "$HOME/.dsh/skins/"
 
 ## 素材与许可
 
-独立样式、仓库脚本及经贡献者确认授权的供图/生成素材使用 [Apache-2.0](LICENSE)。两套皮肤保留各自的 [月下古堡 NOTICE](skins/midnight-contract/NOTICE.md)、[夜城 NOTICE](skins/midnight-contract-city/NOTICE.md)、素材来源记录和生成提示词。旧 Steam Workshop 壁纸不在分发包中。
+独立 CSS 与仓库代码使用 [Apache-2.0](LICENSE)。背景、UI 图片及相关预览仅供个人非商业使用，不得商用，不适用代码的 Apache-2.0 商用授权。角色为江南（杨治）原著《龙族》的路鸣泽，作品与角色权利归江南及各自原权利人。本项目为非官方同人，与 dsh-skins 本仓库、维护者、Deepseek Harness 及原权利人无关联，无官方背书；权利人异议即移除相关素材。
+
+贡献者确认两套素材均自行通过 AI 生成，背景此前在 Codex 中生成；已有 UI 提示词记录 OpenAI image_gen。两套皮肤保留各自的 [月下古堡 NOTICE](skins/midnight-contract/NOTICE.md)、[夜城 NOTICE](skins/midnight-contract-city/NOTICE.md)、来源声明、文件哈希和现有生成提示词。缺失的背景生成请求信息不编造，来源声明不等同于原著／角色官方授权。旧 Steam Workshop 壁纸不在分发包中。
 
 上游 dsh-skins 的契约与脚手架归属、BSD-3-Clause 全文及版权保留在 [第三方声明](THIRD-PARTY-NOTICES.md)。项目不主张龙族系列或人物权利，也不暗示官方背书。来源记录是贡献者的授权声明，检查器不能替代法律权利核验。
 
