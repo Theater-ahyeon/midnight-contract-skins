@@ -25,3 +25,9 @@ This is an unofficial fan skin depicting Lu Mingze (路鸣泽) from Dragon Raja 
 本皮肤为《龙族》路鸣泽角色的非官方同人主题，原著作者／原著权利人为江南（杨治）；原著、角色及相关授权改编的权利归江南及各自原权利人所有。本皮肤及所含图片仅供个人非商业使用，不得用于商业用途。该同人创作与 dsh-skins 本仓库、仓库维护者、Deepseek Harness 及《龙族》权利人无关联，非官方出品且无官方背书；仓库收录或托管不表示关联或授权。权利人提出异议即移除相关素材，并配合仓库下架。AI 生成及贡献者来源声明不等同于取得《龙族》角色或作品的官方授权。
 
 [Dragon Raja novel official account](https://www.weibo.com/cassellcollege?tabtype=newVideo), [Jiang Nan author interview](https://www.chinawriter.com.cn/n1/2018/0523/c405057-30006739.html). These links identify the original work and author; they are not image sources or a license.
+
+## Contributor responsibility / 贡献者责任声明
+
+As the contributor Theater-ahyeon, I assume responsibility for the copyright and compliance of the artwork submitted in these skins, and warrant that I have the right to provide, submit and distribute these assets within the personal non-commercial use and distribution scope stated above. This undertaking does not claim official authorization for the Dragon Raja original work or its characters. If a rights holder objects, I will promptly remove the affected assets and cooperate with takedown.
+
+作为贡献者 Theater-ahyeon，本人承担本次皮肤提交素材的版权与合规责任，并保证有权按照上述个人非商业使用及分发声明的范围提供、提交和分发这些素材。本声明不表示已取得《龙族》原著或角色的官方授权；如权利人提出异议，本人将及时移除相关素材并配合下架。

@@ -19,3 +19,9 @@ The backgrounds and UI images are AI-generated materials created for the contrib
 The Apache-2.0 LICENSE applies to independently authored CSS and code only. Backgrounds, generated UI images and previews containing that artwork are governed by the personal non-commercial artwork notice here, not an Apache-2.0 commercial-use grant. No franchise, character or third-party rights are granted. The manifest artwork license is LicenseRef-Personal-NonCommercial-Fan-Art and points to this NOTICE.
 
 Apache-2.0 LICENSE 仅适用于独立编写的 CSS 与代码，不适用于背景图、生成的 UI 图片及包含这些图片的预览截图；这些图片按本声明仅供个人非商业使用。不会授予作品、角色或第三方权益。清单中的图片许可标为 LicenseRef-Personal-NonCommercial-Fan-Art，并指向本 NOTICE。
+
+## Contributor responsibility / 贡献者责任声明
+
+As the contributor Theater-ahyeon, I assume responsibility for the copyright and compliance of the artwork submitted in these skins, and warrant that I have the right to provide, submit and distribute these assets within the personal non-commercial use and distribution scope stated above. This undertaking does not claim official authorization for the Dragon Raja original work or its characters. If a rights holder objects, I will promptly remove the affected assets and cooperate with takedown.
+
+作为贡献者 Theater-ahyeon，本人承担本次皮肤提交素材的版权与合规责任，并保证有权按照上述个人非商业使用及分发声明的范围提供、提交和分发这些素材。本声明不表示已取得《龙族》原著或角色的官方授权；如权利人提出异议，本人将及时移除相关素材并配合下架。
