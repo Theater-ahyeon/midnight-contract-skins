@@ -16,7 +16,7 @@ Machine-readable evidence: [gui-verification.json](gui-verification.json). Scree
 
 Catalog/CSS safety (55 entries), hooks, typecheck, build and generated-lib drift checks pass. Script tests pass 27/27. The untouched dsh-web baseline passes local typecheck, its complete test suite and docs:check; dsh-skins has no docs:check command.
 
-The contribution's earlier [Ubuntu CI](https://github.com/zhu1090093659/dsh-skins/actions/runs/36917452138) passed all 776 tests and repository gates. Current branch checks and review status are on [PR #33](https://github.com/zhu1090093659/dsh-skins/pull/33/checks).
+The contribution's earlier [Ubuntu CI](https://github.com/zhu1090093659/dsh-skins/actions/runs/36917452138) passed all 776 tests and repository gates. Current branch checks and review status are on [PR #33](https://github.com/zhu1090093659/dsh-skins/pull/35/checks).
 
 Complete local gates passed on 2026-10-02 in an isolated Debian 12 / Node 22.23.3 / pnpm 11.24.0 environment on native ext4, launched by WSL 3.0.1 with kernel 6.18.40.1. `pnpm test --maxWorkers=1` passed all 776 tests across 53 files in 22.16 seconds; all 27 script tests and the catalog, hooks, typecheck and build gates also passed. Before/after SHA-256 checks found zero changes in 249 contribution source, test, script, generated-library, lockfile and skin files at `451544867635db545cf3fc098df0b024fd05c6e0`.
 
@@ -37,3 +37,9 @@ External model inference, arbitrary provider streaming behavior and optional plu
 The latest 80-check GUI run additionally measures the exact Deepseek Harness wordmark fit, a portrait-free 64px brand row, workspace heading clearance from the folio spine and engraved rule, label/action vertical centers, and the Settings text clearance from the generated raven. The duplicate gear is hidden in the expanded sidebar and restored in the native compact rail. Checks wait for the actual collapsed state before inspecting the rail. All assertions pass in both skins, both themes and both viewport sizes. Direct component captures: [workspace](preview/workspace-dark.png), [Settings entry](preview/settings-entry-dark.png).
 
 The focused upstream CSS safety/class coverage/builtin tests pass 126/126 after these changes. Independent repository syntax, validator tests, docs and asset-integrity checks are distinct from the upstream host full-suite and CI history described above.
+
+## Fresh upstream resubmission / 最新基线重新提交
+
+On 2026-10-03 the unchanged visual packages were submitted from upstream main 13deb94. Fresh local native-ext4 gates pass: 788/788 tests across 54 files, 51/51 script tests, 57-entry catalog, typecheck, hooks and build. Before/after hashes cover 1051 source, skin and evidence files with zero drift. Four packaged light/dark screenshots are copied byte-for-byte under evidence in the submission. Both AI-origin declarations and personal non-commercial character-art notices are included. The new Workshop submission is PR 35; the earlier PR 33 was closed, not merged.
+
+2026-10-03 基于上游最新 main 13deb94 重新提交，本地完整测试 788/788、脚本测试 51/51、57 套目录、类型、hooks 和构建通过，1051 文件测试前后无漂移。两套来源与非商业声明已补齐，四张真实亮暗截图原样提交到 evidence。新提交为 PR 35，原 PR 33 已关闭而未合并；图片和样式未改变。

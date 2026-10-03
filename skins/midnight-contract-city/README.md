@@ -56,7 +56,7 @@ pnpm docs:check
 pnpm check
 ```
 
-Here `typecheck` is JavaScript syntax checking, not TypeScript type analysis. These commands verify package resources and documentation; actual-host evidence is separate in VERIFICATION.md. The upstream contribution also runs the official catalog/CSS-safety, hooks, build and typecheck gates. The skin itself has no local build step. Recheck class-suffix seams and real screenshots after host upgrades. The [Workshop contribution](https://github.com/zhu1090093659/dsh-skins/pull/33) remains subject to upstream review; this independent distribution does not imply market availability.
+Here `typecheck` is JavaScript syntax checking, not TypeScript type analysis. These commands verify package resources and documentation; actual-host evidence is separate in VERIFICATION.md. The upstream contribution also runs the official catalog/CSS-safety, hooks, build and typecheck gates. The skin itself has no local build step. Recheck class-suffix seams and real screenshots after host upgrades. The [Workshop contribution](https://github.com/zhu1090093659/dsh-skins/pull/35) remains subject to upstream review; this independent distribution does not imply market availability.
 
 ## Actual conversation rendering
 

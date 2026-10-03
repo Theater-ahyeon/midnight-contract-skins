@@ -56,7 +56,7 @@ pnpm docs:check
 pnpm check
 ```
 
-此处 `typecheck` 为 JavaScript 语法检查，不是 TypeScript 类型检查。这些命令校验资源和文档，真实宿主运行证据另见 VERIFICATION.md。上游贡献还经过官方目录／CSS 安全、hooks、构建和类型检查。本皮肤无需单独构建；宿主升级后需复核类名接缝与截图。[创意工坊贡献 PR](https://github.com/zhu1090093659/dsh-skins/pull/33)仍需上游审阅，独立分发不表示已在市场上架。
+此处 `typecheck` 为 JavaScript 语法检查，不是 TypeScript 类型检查。这些命令校验资源和文档，真实宿主运行证据另见 VERIFICATION.md。上游贡献还经过官方目录／CSS 安全、hooks、构建和类型检查。本皮肤无需单独构建；宿主升级后需复核类名接缝与截图。[创意工坊贡献 PR](https://github.com/zhu1090093659/dsh-skins/pull/35)仍需上游审阅，独立分发不表示已在市场上架。
 
 ## 真实会话验证
 
