@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-A self-contained asset skin for the Deepseek Harness Web GUI, with black-and-gold leather panels, metal contract emblems, burgundy invitation plaques, a sapphire-envelope composer, wax seals and parchment navigation. Version 0.1.2 consolidates the package into one skin with a newly generated landscape without characters, restores native composer positioning and improves message readability over dynamic wallpapers.
+A self-contained asset skin for the Deepseek Harness Web GUI, with black-and-gold leather panels, metal contract emblems, burgundy invitation plaques, a sapphire-envelope composer, wax seals and parchment navigation. Version 0.1.3 retains the character-free landscape introduced in 0.1.2 and the existing UI artwork, protects the long-reply reading matte from Wallpaper Engine neutralization, places one decorative frame on the actual assistant body, and restores process summaries to a flat matte with the host's native layout.
 
 The skin ID is `midnight-contract`, displayed as **零点契约 / Midnight Contract**. See the [skin documentation](skins/midnight-contract/README.md) for components and integration scope.
 
@@ -12,7 +12,7 @@ The skin ID is `midnight-contract`, displayed as **零点契约 / Midnight Contr
 | --- | --- |
 | ![Light GUI](skins/midnight-contract/preview/light.jpg) | ![Dark GUI](skins/midnight-contract/preview/dark.jpg) |
 
-See the [narrow layout](skins/midnight-contract/preview/mobile-root.png). Capture origin, host version and current 0.1.2 checks are in [VERIFICATION.md](skins/midnight-contract/VERIFICATION.md). Historical tests and captures do not validate the replacement background.
+See the [narrow layout](skins/midnight-contract/preview/mobile-root.png). Previews were freshly captured against final 0.1.3 CSS; the empty-session images are byte-identical to 0.1.2. Current Web GUI checks pass; native 0.1.3 has not been retested. Version, source and verification scope are recorded in [VERIFICATION.md](skins/midnight-contract/VERIFICATION.md).
 
 ## Install and restore
 
@@ -45,7 +45,7 @@ Switch to another skin or the default appearance before deleting its directory. 
 
 Independent CSS and repository code use [Apache-2.0](LICENSE). Backgrounds, UI images and related previews are for personal non-commercial use under `LicenseRef-Personal-NonCommercial-Artwork`. The code license grants no commercial artwork use or third-party rights. The project is not officially affiliated with or endorsed by dsh-skins, its maintainers or Deepseek Harness. A rights-holder objection will result in removal of affected assets and cooperation with takedown.
 
-The replacement landscape was generated on 2026-10-05 through Codex's built-in image_gen. The user-selected Steam Workshop wallpaper provides visual reference only; its assets are not copied into this package, and no ownership of it is claimed. Existing AI-generated UI ornaments are reused. Public UI prompts are edited summaries rather than verbatim historical requests. See [NOTICE](skins/midnight-contract/NOTICE.md), [source declaration](skins/midnight-contract/SOURCE-DECLARATION.md), [file hashes](skins/midnight-contract/asset-provenance.json) and [prompt records](skins/midnight-contract/generation-prompts.json). Exact model names and request identifiers are not inferred.
+The landscape was generated on 2026-10-05 through Codex's built-in image_gen and introduced in 0.1.2. Version 0.1.3 retains its original pixels, generation date and SHA-256. The user-selected Steam Workshop wallpaper provides visual reference only; its assets are not copied into this package, and no ownership of it is claimed. Existing AI-generated UI ornaments are reused. Public UI prompts are edited summaries rather than verbatim historical requests. See [NOTICE](skins/midnight-contract/NOTICE.md), [source declaration](skins/midnight-contract/SOURCE-DECLARATION.md), [file hashes](skins/midnight-contract/asset-provenance.json) and [prompt records](skins/midnight-contract/generation-prompts.json). Exact model names and request identifiers are not inferred.
 
 [Third-party notices](THIRD-PARTY-NOTICES.md) preserve upstream contract/scaffold attribution, BSD-3-Clause text and copyright. Source declarations and automated checks cannot establish legal ownership.
 

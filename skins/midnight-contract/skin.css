@@ -178,17 +178,6 @@ body[data-ds-dark-theme] {
   background: linear-gradient(110deg, #652d42a6, #12131d);
   box-shadow: inset 2px 0 #caa775;
 }
-[data-dsh-part='message-body'] {
-  color: var(--mc-ink);
-  background: var(--mc-panel);
-  border: 1px solid var(--mc-rule);
-  border-radius: 8px;
-  padding: 20px 24px;
-}
-[data-dsh-part='message-body'] :is(h1, h2, h3) {
-  font-family: var(--mc-serif);
-  letter-spacing: 0.06em;
-}
 [data-dsh-part='composer-input'] {
   color: #e8e1d6;
   caret-color: #9fd0ff;
@@ -203,7 +192,6 @@ body[data-ds-dark-theme] {
   color: var(--mc-ink);
 }
 @media (max-width: 640px) {
-  [data-dsh-part='message-body'] { padding: 14px 12px; }
   [data-dsh-part='new-session'] { min-height: 44px; font-size: 15px; }
   [data-dsh-part='sidebar-entry'] { min-height: 44px; }
 }

@@ -2,7 +2,7 @@
 
 [English](README.md) | 中文
 
-为 Deepseek Harness Web GUI 制作的黑金契约皮肤。0.1.2 使用新生成的无人风景，搭配 Deepseek Harness 品牌栏和已有 AI 界面材质。
+为 Deepseek Harness Web GUI 制作的黑金契约皮肤。0.1.3 沿用 0.1.2 引入的无人风景、Deepseek Harness 品牌栏和已有 AI 界面材质，增加 Wallpaper Engine 长回复阅读遮罩保护，只在实际助手正文上绘制一层装饰框，并让分析摘要使用平面底板及原生布局。
 
 ## 预览
 
@@ -10,7 +10,7 @@
 | --- | --- |
 | ![亮色界面](preview/light.jpg) | ![暗色界面](preview/dark.jpg) |
 
-另见[窄屏界面](preview/mobile-root.png)。截图来源、宿主版本及本版验证状态见[VERIFICATION.md](VERIFICATION.md)。
+另见[窄屏界面](preview/mobile-root.png)。预览已基于最终 0.1.3 CSS 重新拍摄，空会话图片字节与 0.1.2 相同；当前回执记录本版 Web GUI 结果，原生 0.1.2 证据明确保留为历史。截图来源、宿主版本及验证边界见[VERIFICATION.md](VERIFICATION.md)。
 
 ## 界面
 
@@ -31,11 +31,11 @@
 
 控制器将样式限定在 `html[data-dsh-skin="midnight-contract"]`。`skin.css` 提供 L1 色彩与 L2 语义表面；`patches.css` 明示使用 L3 接缝，覆盖实际侧栏、输入框、设置、模型编辑器、拨钮和菜单。选择器使用语义属性与类名后缀。
 
-插件入口只装饰宿主实际提供的功能。功能文字保持 DOM 输出，装饰不拦截点击；皮肤不再插入会话页顶栏或叙事提示。消息底板为动态背景提供阅读衬底；毛玻璃及提示框定位由控制器负责。皮肤不包含可执行 hook 或远程资产。
+插件入口只装饰宿主实际提供的功能。功能文字保持 DOM 输出，装饰不拦截点击；皮肤不再插入会话页顶栏或叙事提示。实际助手正文使用一层契约框和阅读遮罩，语义消息外层不再重复套框；正文底色保护规则用于抵抗 Wallpaper Engine 的表面清除，最终源码的亮暗主题图片和 WE 视频检查均保留 0.93 遮罩。分析摘要不再套装饰底板或边框，保留宿主原有内边距和边框。毛玻璃及提示框定位由控制器负责。皮肤不包含可执行 hook 或远程资产。
 
 ## 素材与许可
 
-本版无人背景于 2026-10-05 通过 Codex 内置 image_gen 为本项目新生成。UI 图片沿用已有 OpenAI image_gen 素材，不将描述编辑说成新生图。公开 UI 提示词为整理后的通用材质摘要，不作为历史生成请求的逐字回执。
+无人背景于 2026-10-05 通过 Codex 内置 image_gen 为本项目生成，并于 0.1.2 引入。0.1.3 沿用原图片像素及记录中的 SHA-256，不主张重新生成素材。UI 图片沿用已有 OpenAI image_gen 素材，不将描述编辑说成新生图。公开 UI 提示词为整理后的通用材质摘要，不作为历史生成请求的逐字回执。
 
 [Apache-2.0 LICENSE](LICENSE) 仅适用于独立编写的 CSS 与代码。背景、UI 图片与预览按 `LicenseRef-Personal-NonCommercial-Artwork` 仅供个人非商业使用，不授予第三方权益。项目与 dsh-skins、维护者及 Deepseek Harness 无官方关联或背书；权利人提出异议时移除相关素材并配合下架。
 
@@ -52,4 +52,4 @@ pnpm docs:check
 pnpm check
 ```
 
-`typecheck` 为 JavaScript 语法检查。包校验、官方目录／CSS 安全门禁、真实宿主验证各有独立范围。0.1.2 当前状态及剩余检查见[VERIFICATION.md](VERIFICATION.md)。创意工坊上架需维护者实际接收。
+`typecheck` 为 JavaScript 语法检查。包校验、官方目录／CSS 安全门禁、真实宿主验证各有独立范围。0.1.3 Web GUI 结果、剩余官方门禁及 0.1.2 历史原生范围见[VERIFICATION.md](VERIFICATION.md)。创意工坊上架需维护者实际接收。

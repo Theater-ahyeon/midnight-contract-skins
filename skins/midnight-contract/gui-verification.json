@@ -1,236 +1,91 @@
 {
   "skin": "midnight-contract",
+  "skinVersion": "0.1.3",
   "date": "2026-10-06",
   "timezone": "Asia/Shanghai",
   "officialHostVersion": "0.1.7-rc.1",
   "runtime": "real isolated DSH Web GUI",
   "desktopShell": false,
-  "startedAt": "2026-10-05T17:57:48.496Z",
-  "finishedAt": "2026-10-05T17:58:39.669Z",
+  "startedAt": "2026-10-05T22:49:26.066Z",
+  "finishedAt": "2026-10-05T22:50:01.249Z",
+  "timingScope": "guiInteractionCapture",
   "sourceSha256": {
-    "skin.css": "d42c27d173689b86f42d5934268a9a17c3bf5fe1a21f8e3aa65d2d06170c5c85",
-    "patches.css": "024631c6a503c66174b29c88f0195ed1e4d0867841b4eacdec8d184930c0ff6c",
+    "skin.css": "8169fa47d01022bc487eae532e28142ec802f1e01249791ea719ca267f2e5e37",
+    "patches.css": "03e5bac10facd08084bb937df559f78e811ddbe666c72b443d09a5b96a5207f3",
     "assets/scene-approved.png": "57369a1a218c13edee81748ec1450c4200e2a605dfaeb89629ddfdd94cd6ebed"
   },
   "sourceStable": true,
-  "cases": [
-    {
-      "theme": "light",
-      "viewport": {
-        "width": 1440,
-        "height": 900
-      },
-      "steps": [
-        {
-          "name": "activate-and-theme",
-          "status": "pass"
-        },
-        {
-          "name": "root-layout",
-          "status": "pass"
-        },
-        {
-          "name": "composer-draft",
-          "status": "pass"
-        },
-        {
-          "name": "permission-menu",
-          "status": "pass"
-        },
-        {
-          "name": "model-menu",
-          "status": "pass"
-        },
-        {
-          "name": "settings",
-          "status": "pass"
-        },
-        {
-          "name": "developer-switch",
-          "status": "pass"
-        },
-        {
-          "name": "models-settings",
-          "status": "pass"
-        },
-        {
-          "name": "sidebar-collapse",
-          "status": "pass"
-        },
-        {
-          "name": "details-expand",
-          "status": "pass"
-        }
-      ]
-    },
-    {
-      "theme": "light",
-      "viewport": {
-        "width": 390,
-        "height": 844
-      },
-      "steps": [
-        {
-          "name": "activate-and-theme",
-          "status": "pass"
-        },
-        {
-          "name": "root-layout",
-          "status": "pass"
-        },
-        {
-          "name": "composer-draft",
-          "status": "pass"
-        },
-        {
-          "name": "permission-menu",
-          "status": "pass"
-        },
-        {
-          "name": "model-menu",
-          "status": "pass"
-        },
-        {
-          "name": "settings",
-          "status": "pass"
-        },
-        {
-          "name": "developer-switch",
-          "status": "pass"
-        },
-        {
-          "name": "models-settings",
-          "status": "pass"
-        },
-        {
-          "name": "sidebar-collapse",
-          "status": "pass"
-        },
-        {
-          "name": "details-expand",
-          "status": "pass"
-        }
-      ]
-    },
-    {
-      "theme": "dark",
-      "viewport": {
-        "width": 1440,
-        "height": 900
-      },
-      "steps": [
-        {
-          "name": "activate-and-theme",
-          "status": "pass"
-        },
-        {
-          "name": "root-layout",
-          "status": "pass"
-        },
-        {
-          "name": "composer-draft",
-          "status": "pass"
-        },
-        {
-          "name": "permission-menu",
-          "status": "pass"
-        },
-        {
-          "name": "model-menu",
-          "status": "pass"
-        },
-        {
-          "name": "settings",
-          "status": "pass"
-        },
-        {
-          "name": "developer-switch",
-          "status": "pass"
-        },
-        {
-          "name": "models-settings",
-          "status": "pass"
-        },
-        {
-          "name": "sidebar-collapse",
-          "status": "pass"
-        },
-        {
-          "name": "details-expand",
-          "status": "pass"
-        }
-      ]
-    },
-    {
-      "theme": "dark",
-      "viewport": {
-        "width": 390,
-        "height": 844
-      },
-      "steps": [
-        {
-          "name": "activate-and-theme",
-          "status": "pass"
-        },
-        {
-          "name": "root-layout",
-          "status": "pass"
-        },
-        {
-          "name": "composer-draft",
-          "status": "pass"
-        },
-        {
-          "name": "permission-menu",
-          "status": "pass"
-        },
-        {
-          "name": "model-menu",
-          "status": "pass"
-        },
-        {
-          "name": "settings",
-          "status": "pass"
-        },
-        {
-          "name": "developer-switch",
-          "status": "pass"
-        },
-        {
-          "name": "models-settings",
-          "status": "pass"
-        },
-        {
-          "name": "sidebar-collapse",
-          "status": "pass"
-        },
-        {
-          "name": "details-expand",
-          "status": "pass"
-        }
-      ]
-    }
-  ],
-  "summary": {
-    "cases": 4,
-    "steps": 40,
-    "failed": [],
-    "pageErrors": 0,
-    "failedRequests": 0
+  "backgroundReuse": {
+    "introducedIn": "0.1.2",
+    "generatedOn": "2026-10-05",
+    "pixelsChanged": false
   },
-  "restoration": [
-    {
-      "name": "restore-blue-fantasy",
-      "status": "pass",
-      "staleMidnightStylesheets": 0
+  "gui": {
+    "cases": [
+      {
+        "theme": "light",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "stepsPassed": 10
+      },
+      {
+        "theme": "light",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "stepsPassed": 10
+      },
+      {
+        "theme": "dark",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "stepsPassed": 10
+      },
+      {
+        "theme": "dark",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "stepsPassed": 10
+      }
+    ],
+    "checks": [
+      "activate-and-theme",
+      "root-layout",
+      "composer-draft",
+      "permission-menu",
+      "model-menu",
+      "settings",
+      "developer-switch",
+      "models-settings",
+      "sidebar-collapse",
+      "details-expand"
+    ],
+    "summary": {
+      "cases": 4,
+      "steps": 40,
+      "failed": [],
+      "pageErrors": 0,
+      "failedRequests": 0
     },
-    {
-      "name": "restore-stock",
-      "status": "pass",
-      "staleMidnightStylesheets": 0
-    }
-  ],
-  "originalRestored": true,
+    "restoration": [
+      {
+        "name": "restore-blue-fantasy",
+        "status": "pass"
+      },
+      {
+        "name": "restore-stock",
+        "status": "pass"
+      }
+    ],
+    "originalRestored": true
+  },
   "captures": [
     {
       "file": "preview/light.jpg",
@@ -260,334 +115,274 @@
       "sha256": "93d7e1807e425833f95d568a7fb012803f27698c1bcdf373db4ac79eb803e85a"
     }
   ],
-  "nativeGeometry": [
-    {
-      "theme": "light",
-      "baseline": "blue-fantasy",
-      "composerDelta": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
-      },
-      "stackDelta": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
-      },
-      "centerDelta": 0
-    },
-    {
-      "theme": "light",
-      "baseline": "official",
-      "composerDelta": {
-        "x": 0,
-        "y": 0.5,
-        "w": 0,
-        "h": 0
-      },
-      "stackDelta": {
-        "x": 0,
-        "y": 0.5,
-        "w": 0,
-        "h": 0
-      },
-      "centerDelta": 0
-    },
-    {
-      "theme": "dark",
-      "baseline": "blue-fantasy",
-      "composerDelta": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
-      },
-      "stackDelta": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0
-      },
-      "centerDelta": 0
-    },
-    {
-      "theme": "dark",
-      "baseline": "official",
-      "composerDelta": {
-        "x": 0,
-        "y": 0.5,
-        "w": 0,
-        "h": 0
-      },
-      "stackDelta": {
-        "x": 0,
-        "y": 0.5,
-        "w": 0,
-        "h": 0
-      },
-      "centerDelta": 0
-    }
-  ],
-  "rightPanelFrames": {
+  "captureNote": "Fresh final-CSS captures; the empty-session preview bytes are identical to the prior images because the changed message/process selectors are absent in that state.",
+  "conversationHistory": {
     "cases": [
       {
-        "name": "closed-1440",
-        "frames": [
-          {
-            "open": false,
-            "image": false
-          },
-          {
-            "open": false,
-            "image": false
-          }
-        ]
-      },
-      {
-        "name": "closed-1920",
-        "frames": [
-          {
-            "open": false,
-            "image": false
-          },
-          {
-            "open": false,
-            "image": false
-          }
-        ]
-      },
-      {
-        "name": "closed-390",
-        "frames": [
-          {
-            "open": false,
-            "image": false
-          },
-          {
-            "open": false,
-            "image": false
-          }
-        ]
-      },
-      {
-        "name": "open-1440",
-        "frames": [
-          {
-            "open": false,
-            "image": false
-          },
-          {
-            "open": true,
-            "image": true
-          }
-        ]
-      }
-    ],
-    "restored": true
-  },
-  "brandGeometry": {
-    "cases": [
-      {
-        "name": "brand-1440-expanded",
-        "wide": true,
-        "actualGeometry": {
-          "iconLeft": 24,
-          "iconRight": 56,
-          "textX": 62,
-          "textRight": 195.921875,
-          "gap": 6
-        },
-        "wordmarkContent": "\"Deepseek Harness\"",
-        "pageOverflow": false
-      },
-      {
-        "name": "brand-1440-collapsed",
-        "wide": false,
-        "wordmarkContent": "none",
-        "pageOverflow": false
-      },
-      {
-        "name": "brand-390-collapsed",
-        "wide": false,
-        "wordmarkContent": "none",
-        "pageOverflow": false
-      },
-      {
-        "name": "brand-390-expanded",
-        "wide": true,
-        "actualGeometry": {
-          "iconLeft": 24,
-          "iconRight": 56,
-          "textX": 62,
-          "textRight": 195.921875,
-          "gap": 6
-        },
-        "wordmarkContent": "\"Deepseek Harness\"",
-        "pageOverflow": false
-      }
-    ],
-    "restored": true
-  },
-  "workspaceScroll": {
-    "fixture": {
-      "workspaceCount": 20,
-      "sessionsPerWorkspace": 0,
-      "reason": "Official GUI omits non-current blank session rows, so real group rows provide overflow pressure"
-    },
-    "externalModelCalls": 0,
-    "domInjection": false,
-    "cases": [
-      {
+        "theme": "light",
         "width": 1440,
-        "overflowY": "auto",
-        "scrollHeight": 1063,
-        "clientHeight": 483,
-        "scrollTop": 580,
-        "lastRowBottom": 766,
-        "listBottom": 782,
-        "regionBottom": 812,
-        "settingsY": 824
+        "background": "skin image",
+        "shortBodyHeight": 116,
+        "longBodyHeight": 4380,
+        "shortBodyAlpha": 0.93,
+        "longBodyAlpha": 0.93,
+        "longBodyWallpaperSurfacePresent": false
       },
       {
+        "theme": "light",
         "width": 1920,
-        "overflowY": "auto",
-        "scrollHeight": 1063,
-        "clientHeight": 663,
-        "scrollTop": 400,
-        "lastRowBottom": 946,
-        "listBottom": 962,
-        "regionBottom": 992,
-        "settingsY": 1004
+        "background": "skin image",
+        "shortBodyHeight": 116,
+        "longBodyHeight": 4332,
+        "shortBodyAlpha": 0.93,
+        "longBodyAlpha": 0.93,
+        "longBodyWallpaperSurfacePresent": false
+      },
+      {
+        "theme": "dark",
+        "width": 1440,
+        "background": "skin image",
+        "shortBodyHeight": 116,
+        "longBodyHeight": 4380,
+        "shortBodyAlpha": 0.93,
+        "longBodyAlpha": 0.93,
+        "longBodyWallpaperSurfacePresent": false
+      },
+      {
+        "theme": "dark",
+        "width": 1920,
+        "background": "skin image",
+        "shortBodyHeight": 116,
+        "longBodyHeight": 4332,
+        "shortBodyAlpha": 0.93,
+        "longBodyAlpha": 0.93,
+        "longBodyWallpaperSurfacePresent": false
+      },
+      {
+        "theme": "light",
+        "width": 1440,
+        "background": "WE video",
+        "shortBodyHeight": 116,
+        "longBodyHeight": 4380,
+        "shortBodyAlpha": 0.93,
+        "longBodyAlpha": 0.93,
+        "longBodyWallpaperSurfacePresent": true
+      },
+      {
+        "theme": "light",
+        "width": 1920,
+        "background": "WE video",
+        "shortBodyHeight": 116,
+        "longBodyHeight": 4332,
+        "shortBodyAlpha": 0.93,
+        "longBodyAlpha": 0.93,
+        "longBodyWallpaperSurfacePresent": true
+      },
+      {
+        "theme": "dark",
+        "width": 1440,
+        "background": "WE video",
+        "shortBodyHeight": 116,
+        "longBodyHeight": 4380,
+        "shortBodyAlpha": 0.93,
+        "longBodyAlpha": 0.93,
+        "longBodyWallpaperSurfacePresent": true
+      },
+      {
+        "theme": "dark",
+        "width": 1920,
+        "background": "WE video",
+        "shortBodyHeight": 116,
+        "longBodyHeight": 4332,
+        "shortBodyAlpha": 0.93,
+        "longBodyAlpha": 0.93,
+        "longBodyWallpaperSurfacePresent": true
       }
     ],
+    "ownMatteAlpha": 0.93,
+    "measuredSurface": "actual assistant body, not a painted ancestor",
+    "servedStylesMatchOfficialTransform": true,
+    "bodyBackgroundCssomPriority": "important",
+    "loadedStyleSha256": {
+      "skin.css": "666311e7c7e27ee006df454e063af63a33594c66a09193b34a18f7de8cab9e41",
+      "patches.css": "2d8dde320b3ba9baaa29be9e1b800d46e1e4cdfa6d749c8bda223824e6aca62f"
+    },
     "restoration": {
-      "createdSessionsArchived": true,
-      "createdWorkspaceRegistrationsRemoved": true,
-      "skinAndTheme": true
-    }
-  },
-  "localDynamicVideo": {
-    "cases": [
-      {
-        "theme": "light",
-        "secondsAdvanced": 0.7051539999999998,
-        "muted": true,
-        "readyState": 4
-      },
-      {
-        "theme": "dark",
-        "secondsAdvanced": 0.656965,
-        "muted": true,
-        "readyState": 4
-      }
-    ],
-    "restored": {
-      "wallpaper": true,
-      "skinAndTheme": true
-    },
-    "originalVideoRedistributed": false
-  },
-  "conversationFixture": {
-    "realModelInference": false,
-    "domInjection": false,
-    "realReadOnlyToolReceipt": true,
-    "externalModelCalls": 0,
-    "localProtocolRequestsThisRun": 0,
-    "source": "Recorded local deterministic SSE through the real DSH Agent and session journal",
-    "cases": [
-      {
-        "theme": "light",
-        "width": 1440,
-        "minimumPrimaryTextContrast": 10.116849463618612
-      },
-      {
-        "theme": "light",
-        "width": 1920,
-        "minimumPrimaryTextContrast": 10.116849463618612
-      },
-      {
-        "theme": "dark",
-        "width": 1440,
-        "minimumPrimaryTextContrast": 11.942004804077309
-      },
-      {
-        "theme": "dark",
-        "width": 1920,
-        "minimumPrimaryTextContrast": 11.942004804077309
-      }
-    ],
-    "restoration": {
-      "stockSessionModel": true,
       "wallpaper": true,
       "skin": true,
-      "theme": true,
-      "globalStockModelUnchanged": true
+      "theme": true
+    },
+    "pageErrors": 0,
+    "localProtocolRequestsThisRun": 0
+  },
+  "streaming": {
+    "cases": [
+      {
+        "theme": "light",
+        "textChars": 630,
+        "textSha256": "0c7349d6a551efb8296eb8dbac6196ee2a723db2874cd848fb95973cf9f421d2",
+        "bodyBefore": {
+          "x": 485.296875,
+          "y": 405,
+          "w": 742.390625,
+          "h": 596
+        },
+        "bodyAfter": {
+          "x": 485.296875,
+          "y": 405,
+          "w": 742.390625,
+          "h": 596
+        },
+        "ownMatteAlpha": 0.93,
+        "exactStylesMatch": true,
+        "outerFrameAbsent": true
+      },
+      {
+        "theme": "dark",
+        "textChars": 630,
+        "textSha256": "0c7349d6a551efb8296eb8dbac6196ee2a723db2874cd848fb95973cf9f421d2",
+        "bodyBefore": {
+          "x": 485.296875,
+          "y": 405,
+          "w": 742.390625,
+          "h": 596
+        },
+        "bodyAfter": {
+          "x": 485.296875,
+          "y": 405,
+          "w": 742.390625,
+          "h": 596
+        },
+        "ownMatteAlpha": 0.93,
+        "exactStylesMatch": true,
+        "outerFrameAbsent": true
+      }
+    ],
+    "localhostProtocolRequests": 2,
+    "realModelInference": false,
+    "domInjection": false,
+    "externalModelCalls": 0,
+    "reasoning": {
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "closedToOpenVerified": true,
+      "processHeaderBackgroundImage": "none",
+      "processHeaderBorder": "0px",
+      "ownMatteAlpha": 0.93,
+      "nativePaddingObserved": {
+        "closed": "0px",
+        "expanded": "0px 0px 16px"
+      },
+      "paddingScope": "Official Web GUI 0.1.7-rc.1 only; preserve the host contract rather than requiring this value on desktop 0.2.",
+      "summaryVisibleAfterAncestorClips": true,
+      "summaryCenterHit": true
+    },
+    "restoration": {
+      "localProtocolCompleted": true,
+      "fixtureSessionsArchived": 2,
+      "sessionStockModelsRestored": true,
+      "providerRemoved": true,
+      "dummyCredentialRemoved": true,
+      "globalStockModelUnchanged": true,
+      "skin": true,
+      "theme": true
+    },
+    "pageErrors": 0
+  },
+  "restoration": {
+    "preservedOriginalStateRestored": true,
+    "fixtureProvidersAbsent": true,
+    "dummyCredentialsAbsent": true
+  },
+  "officialChecks": {
+    "scope": "Unchanged loader core checked before final skin sync at 039bff4",
+    "build": "pass",
+    "committedLibConsistency": "pass",
+    "hooksRegistry": "pass",
+    "typecheck": "pass",
+    "fullTestSuiteLocallyRerun": false,
+    "finalSkinCatalog": "pass",
+    "skinValidation": "pass",
+    "catalogSkinCount": 58,
+    "hooksRegistryAfterSkinSync": "pass",
+    "existingSuffixWarnings": 111
+  },
+  "nativeDesktop": {
+    "testedThisRevision": false,
+    "nextGate": "Inspect the exact installed 0.1.3 on the user's next normal desktop launch; no app launch or restart was performed."
+  },
+  "historical": {
+    "skinVersion": "0.1.2",
+    "date": "2026-10-06",
+    "timezone": "Asia/Shanghai",
+    "startedAt": "2026-10-05T17:57:48.496Z",
+    "finishedAt": "2026-10-05T17:58:39.669Z",
+    "sourceSha256": {
+      "skin.css": "d42c27d173689b86f42d5934268a9a17c3bf5fe1a21f8e3aa65d2d06170c5c85",
+      "patches.css": "024631c6a503c66174b29c88f0195ed1e4d0867841b4eacdec8d184930c0ff6c",
+      "assets/scene-approved.png": "57369a1a218c13edee81748ec1450c4200e2a605dfaeb89629ddfdd94cd6ebed"
+    },
+    "scope": "Historical only; not current 0.1.3 runtime verification",
+    "webGui": {
+      "officialHostVersion": "0.1.7-rc.1",
+      "steps": 40,
+      "restorationChecks": 2
+    },
+    "officialTests": {
+      "nodeScriptTests": 51,
+      "vitestTests": 656,
+      "vitestFiles": 60,
+      "locallyRerunFor013": false
+    },
+    "oldConversationContrastAssurance": "Withdrawn: ancestor background did not represent video behind a transparent reply.",
+    "nativeDesktop": {
+      "date": "2026-10-06",
+      "hostVersion": "0.2.0-rc.2",
+      "skinCenterVersion": "0.4.4",
+      "installedPatchesSha256": "024631c6a503c66174b29c88f0195ed1e4d0867841b4eacdec8d184930c0ff6c",
+      "background": {
+        "wallpaperEngineEnabled": false,
+        "skinBackgroundEnabled": true
+      },
+      "viewports": [
+        {
+          "mode": "normal",
+          "width": 1280,
+          "height": 820
+        },
+        {
+          "mode": "maximized",
+          "width": 1920,
+          "height": 1032
+        }
+      ],
+      "workspaceScroll": {
+        "groups": 6,
+        "expanded": 6,
+        "clientHeight": 458,
+        "scrollHeight": 1269,
+        "scrollTop": 811,
+        "maxScrollTop": 811,
+        "listBottom": 846,
+        "footerTop": 876,
+        "restored": true
+      },
+      "scope": "Empty-layout and workspace checks with the skin image; not a native message/WE test.",
+      "limits": [
+        "F11 did not change the viewport in this run. Normal and maximized modes are verified; native full screen is unverified.",
+        "Two renderer crashes occurred earlier in the session. Logs report crashed without a faulting module; cause remains undetermined. No further crash was observed during the final native run.",
+        "Native testing does not establish all-version compatibility or human acceptance."
+      ]
     }
   },
   "limits": [
-    "This receipt covers the real official 0.1.7-rc.1 Web GUI; native desktop-shell validation has a separate evidence record.",
-    "The messages, code and tool receipts are explicitly labeled deterministic local protocol fixtures; no external model was called.",
-    "Optional plugin rows were not installed in this isolated profile.",
-    "Automation does not establish human visual acceptance."
-  ],
-  "nativeDesktop": {
-    "date": "2026-10-06",
-    "hostVersion": "0.2.0-rc.2",
-    "skinCenterVersion": "0.4.4",
-    "platform": "Windows / Electron 44.0.0",
-    "installedPatchesSha256": "024631c6a503c66174b29c88f0195ed1e4d0867841b4eacdec8d184930c0ff6c",
-    "actualCssReload": "Reloaded installed skin stylesheet links using a build query; verified computed styles rather than relying on cached hard reload.",
-    "sourceAndInstalledAssetsMatch": true,
-    "background": {
-      "wallpaperEngineEnabled": false,
-      "skinBackgroundEnabled": true,
-      "naturalSize": [
-        1672,
-        941
-      ],
-      "frameFill": "rgba(0, 0, 0, 0)"
-    },
-    "viewports": [
-      {
-        "mode": "normal",
-        "width": 1280,
-        "height": 820
-      },
-      {
-        "mode": "maximized",
-        "width": 1920,
-        "height": 1032
-      }
-    ],
-    "brand": {
-      "textMarginLeft": "38px",
-      "visuallySeparated": true
-    },
-    "detailsClosedBorderImage": "none",
-    "workspaceScroll": {
-      "groups": 6,
-      "expanded": 6,
-      "clientHeight": 458,
-      "scrollHeight": 1269,
-      "scrollTop": 811,
-      "maxScrollTop": 811,
-      "listBottom": 846,
-      "footerTop": 876,
-      "restored": true
-    },
-    "screenshots": "Private native screenshots were visually inspected; public previews are from the isolated GUI without user data.",
-    "leftActive": {
-      "skin": "midnight-contract",
-      "background": "skin",
-      "window": "maximized",
-      "workspaceStateRestored": true
-    },
-    "limits": [
-      "F11 did not change the viewport in this run. Normal and maximized modes are verified; native full screen is unverified.",
-      "Two renderer crashes occurred earlier in the session. Logs report crashed without a faulting module; cause remains undetermined. No further crash was observed during the final native run.",
-      "Native testing does not establish all-version compatibility or human acceptance."
-    ]
-  }
+    "This current runtime receipt covers the Web GUI, not native desktop.",
+    "Contrast checks use the body's own matte color and alpha; no pixel-by-pixel dynamic-video contrast or sustained performance is claimed.",
+    "Scene/WebGL/webpage/manual-priority branches and native fullscreen remain unverified.",
+    "Two prior renderer crash causes remain unknown; this CSS repair is not a crash repair.",
+    "Private reference-wallpaper video and native screenshots are excluded from distribution.",
+    "Human visual acceptance and Workshop listing remain separate gates."
+  ]
 }

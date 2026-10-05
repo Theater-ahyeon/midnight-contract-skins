@@ -1,53 +1,76 @@
 # Verification / 验证说明
 
-Version / 版本: 0.1.2. Updated / 更新: 2026-10-06 (Asia/Shanghai).
+Version / 版本: 0.1.3. Updated / 更新: 2026-10-06 (Asia/Shanghai).
 
-This revision replaces the previous background with a new landscape without characters and updates the package descriptions and artwork license name. UI ornament files are retained. CSS restores the host composer layout, removes injected narrative text, fixes message readability, fits the workspace frame to its scroll region, removes closed-panel residual corners and separates the Windows brand icon and text. The Windows titlebar shell now allows the skin background to show. Previous screenshots are excluded from the new preview set.
+This revision retains the artwork introduced or reused in 0.1.2 and changes message CSS. It protects the actual assistant body's reading matte from Wallpaper Engine neutralization, frames that body once, and replaces decorative process-summary plaques with a flat theme matte while preserving host padding, border and layout. The final-source Web GUI checks below pass; native desktop verification remains a separate gate.
 
-本版换用新生成的无人风景，并更新包描述与图片许可名称。UI 装饰沿用；CSS 恢复默认输入区布局，移除注入的叙事文案，修复消息可读性、工作区书框范围、闭合详情残角和 Windows 标志重叠，并让桌面壳正确显示皮肤背景。新预览不包含旧版截图。
+本版沿用 0.1.2 的图片，仅修改消息 CSS：保护实际助手正文遮罩、移除外层重复装饰框，并将分析摘要的装饰图片改为平面主题底板，保留宿主内边距、边框和布局。最终源码的 Web GUI 检查通过；原生桌面验证另行记录。
+
+## Current source identity / 本版源码标识
+
+| File | SHA-256 |
+| --- | --- |
+| skin.css | 8169fa47d01022bc487eae532e28142ec802f1e01249791ea719ca267f2e5e37 |
+| patches.css | 03e5bac10facd08084bb937df559f78e811ddbe666c72b443d09a5b96a5207f3 |
+| assets/scene-approved.png | 57369a1a218c13edee81748ec1450c4200e2a605dfaeb89629ddfdd94cd6ebed |
+
+The background was generated on 2026-10-05 and introduced in 0.1.2. Its pixels, generation record, provenance and pinned digest are unchanged in 0.1.3; no new generation is claimed.
+
+背景于 2026-10-05 生成并在 0.1.2 引入；0.1.3 保留图片像素、生成记录、来源和固定哈希，不重新生成图片。
 
 ## Current evidence / 本版证据
 
-| Gate | 0.1.2 status |
+| Gate | 0.1.3 status |
 | --- | --- |
-| Background identity | SHA-256 matches the packaged image, asset-provenance.json, generation record and validator's pinned digest |
+| Source and background identity | Final CSS and background hashes match across history, streaming and GUI runs; sourceStable is true in each |
 | Package checks | JavaScript syntax, 18/18 validator tests, 69 local documentation links and 22 CSS asset references pass |
-| Official build and regression gates | Build, committed-lib consistency, hooks registry and typecheck pass; Node script tests 51/51 and Vitest 656/656 (60 files) pass |
-| Official catalog/CSS gates | Final synchronized midnight-contract v0.1.2 validates; catalog/CSS safety pipeline passes for all 58 repository skins; hooks registry passes (2026-10-06) |
-| Actual host previews | Official DSH 0.1.7-rc.1 isolated GUI: light/dark at 1440x900 and 390x844, 40/40 interaction checks and 2/2 restoration checks pass; no browser errors or failed asset requests |
-| Composer position | Light/dark composer and stack x/y/width/height match blue-fantasy exactly; against no skin only y differs by 0.5px, all other bounds match |
-| Workspace overflow | 20 real workspace groups scroll inside the frame at 1440 and 1920 widths; list/frame remain above settings; temporary registrations removed |
-| Brand and panel corners | Icon/text gap is 6px; closed right panels have no border image at 1440, 1920 and 390 widths; open-panel frame remains |
-| Native Windows desktop | Actual 0.2.0-rc.2 / skin center 0.4.4: normal 1280x820 and maximized 1920x1032 inspected with the skin background; installed CSS and computed styles verified |
-| Native workspace overflow | Six existing groups expanded, list 458px / content 1269px, reaches scrollTop 811; list bottom 846px remains above footer 876px; original group state restored |
-| Dynamic video background | Original local Wallpaper Engine video continues decoding and playing after skin switch in both themes; no duplicate video, mute retained, original preferences restored; composer text contrast 12.98:1 |
+| Official loader-core gates | Build, committed-lib consistency, hooks registry and typecheck rerun and pass on unchanged core before final skin sync |
+| Official final catalog/CSS gates | Final 0.1.3 manifest/CSS validates; catalog/CSS safety passes all 58 skins and the hooks registry; 111 existing suffix warnings retain the disclosed compatibility boundary |
+| Actual host previews and interaction | Isolated official DSH 0.1.7-rc.1 Web GUI: light/dark at 1440x900 and 390x844, 40/40 interaction checks and 2/2 restoration checks pass; no page errors or failed requests |
+| Long-reply reading matte | 8/8 history cases at 1440/1920 widths in light/dark, with skin-image and WE video; short and long bodies retain own alpha 0.93, including all four marked WE long bodies |
+| Loaded style identity | Served styles match the expected official safety transform; CSSOM retains the important body-background rule |
+| Streaming and completed message states | 2/2 local deterministic theme cases pass; the full 630-character output has the same SHA-256 before/after reload, with identical body x/y/width/height |
+| Single assistant-body frame | Live and completed bodies retain alpha 0.93; the semantic outer wrapper has no padding, border or border image |
+| Process summaries | Closed/open interaction passes in both themes; summary is visible when open, headers have no image/frame and retain their native padding with alpha 0.93 |
+| Restoration | Preserved original skin/theme/background state restored; two fixture sessions archived, temporary provider and dummy key removed, stock models restored |
+| Native Windows desktop | Not rerun for 0.1.3; 0.1.2 native results remain historical |
 | Human visual acceptance | Pending; automation cannot establish acceptance |
-| Workshop acceptance | Subject to upstream review and published catalog state |
+| Workshop acceptance | Subject to current upstream review and published catalog state |
 
-Preview targets: [light](preview/light.jpg), [dark](preview/dark.jpg), [narrow](preview/mobile-root.png). Current host receipt: [gui-verification.json](gui-verification.json). Source identity: [asset-provenance.json](asset-provenance.json). Layout mapping: [VISUAL-CONTRACT.md](VISUAL-CONTRACT.md).
+Fresh previews: [light](preview/light.jpg), [dark](preview/dark.jpg), [narrow](preview/mobile-root.png). Current receipt: [gui-verification.json](gui-verification.json). Source identity: [asset-provenance.json](asset-provenance.json). Layout mapping: [VISUAL-CONTRACT.md](VISUAL-CONTRACT.md).
 
-Fresh real-browser captures were taken on 2026-10-06. JPEG previews use quality 85 at device scale 1. Capture receipts pin the CSS and background hashes before and after each run. The original QA skin/theme was restored. Conversation checks reuse a real Agent journal created through a localhost deterministic SSE fixture and one read-only tool call; temporary dummy provider credentials were removed. No external provider credentials or model inference calls were used.
+Previews were captured against final 0.1.3 CSS on 2026-10-06. Their bytes match 0.1.2 because the changed message/process selectors are absent in an empty session. The receipt's startedAt/finishedAt window covers GUI interaction and capture only; history and streaming have separate source-stability proofs, not a shared 35-second duration.
 
-本次真实浏览器截图拍摄于 2026-10-06；亮暗桌面与手机四组共 40 项交互、两项恢复检查通过，原验证皮肤与主题已恢复。回执核对运行前后的 CSS 与背景哈希，未放宽断言。会话测试复用 localhost 确定性 SSE 与真实只读工具产生的 Agent 日志；临时假 provider／凭据已清除，未使用外部供应商凭据或模型推理。
+The streaming checks use a real DSH Agent with a localhost deterministic SSE fixture and no external model inference. Process-header padding observed in Web GUI 0.1.7 was 0px closed and 0px 0px 16px expanded; that measured value is not a desktop 0.2 requirement. The CSS preserves the host's own contract.
 
-Native Windows screenshots were inspected separately in the actual desktop application. Its cached stylesheets required a build-query refresh; final computed styles match the installed revision. The user's requested skin background remains active, workspace expansion/scroll state was restored, and the agent-opened DevTools was closed. Private native screenshots contain user workspace information and are not redistributed.
+预览于 2026-10-06 使用最终 0.1.3 CSS 重拍；空会话不含本次修改的消息／摘要选择器，因此图片字节与 0.1.2 相同。回执起止时间仅对应 GUI 交互及截图窗口，不表示历史会话和流式测试也在同一 35 秒内完成。流式测试通过实际 DSH Agent 接入本地确定性 SSE，不调用外部模型。所测 Web GUI 0.1.7 摘要行闭合内边距为 0、展开底部为 16px，不将该数值强加为桌面 0.2 标准。
 
-另在实际 Windows 桌面应用查看普通窗、最大化及六工作区滚动截图。缓存样式通过构建查询参数刷新后，计算样式与最终安装版本一致。按用户要求保留皮肤自带背景，恢复工作区展开及滚动状态，并关闭本次打开的开发工具。原生截图含用户工作区信息，仅作私有验证。
+## Historical evidence and contrast correction / 历史证据与对比度更正
 
-## Historical evidence / 历史证据
+The 0.1.2 results recorded on 2026-10-06 used skin.css d42c27d173689b86f42d5934268a9a17c3bf5fe1a21f8e3aa65d2d06170c5c85 and patches.css 024631c6a503c66174b29c88f0195ed1e4d0867841b4eacdec8d184930c0ff6c. The background digest was the same as above. Dates and hashes are retained in the receipt's compact historical object.
 
-Earlier checks and screenshots from 2026-10-02 and 2026-10-03 apply to prior visuals and package revisions. They are historical records outside this 0.1.2 package's current evidence and cannot validate the new background, current preview set or fresh Workshop submission. Current results must be recorded after the replacement assets are installed.
+- The prior official baseline passed 51/51 Node script tests and 656/656 Vitest tests across 60 files, with 58 catalog skins. The local full suite was not rerun for 0.1.3; fresh final-head CI remains a separate check.
+- The earlier GUI measured composer geometry against blue-fantasy/no skin and scrolled 20 fixture workspace groups. Its playback and restoration observations remain within the old revision's scope.
+- Actual Windows desktop 0.2.0-rc.2 / skin center 0.4.4 was inspected with the skin image and WE disabled at normal 1280x820 and maximized 1920x1032. Six existing groups reached scrollTop 811px in a 458px list with 1269px content, above the footer. Group state was restored and agent-opened DevTools closed. Native screenshots contain workspace information and are private.
 
-2026-10-02 与 2026-10-03 的旧测试及截图属于此前视觉和包版本，作为本版当前证据之外的历史记录；不能证明新背景、当前截图或重新提交已经通过。本版结果需在新素材安装后记录。
+The earlier contrast checker walked to the first painted ancestor. A black ancestor is not the visible background of a transparent message over a separate video layer. Its ancestor-derived scores, including 16.172:1, did not prove that message's contrast. Direct 0.1.2 checks confirmed transparent long WE replies in both themes, so the old conversation contrast assurance is withdrawn. The separate old 12.98:1 composer value is not proof of long-reply readability.
 
-## Limits / 验证边界
+Current checks require the reply body's own matte and calculate foreground contrast against that matte color. Current target screenshots were inspected. These are not pixel-by-pixel dynamic-video contrast measurements or sustained performance evidence.
 
-Local upstream gates ran on Windows with Node 24.13.0 and pnpm 10.32.1; upstream CI uses Ubuntu and Node 22. Class-suffix L3 selectors pass the safety pipeline with its compatibility warnings. Original Wallpaper Engine artwork is used only for local private QA and is excluded from all previews and submission files.
+旧官方 51/51 与 656/656 测试数量属于 0.1.2 基线，本轮没有本地重跑完整上游测试。旧原生测试使用皮肤图片且关闭 WE，其日期、哈希及范围保留为历史，不能证明 0.1.3 原生长回复或视频背景通过。旧算法沿祖先取底色，误把透明正文背后的独立视频当作祖先黑色；包括 16.172:1 在内的数字不能证明该正文可读，旧会话对比度保证已撤回。12.98:1 是旧输入框测量，不代表长回复。本版读取正文自身遮罩和前景色，并查看实际目标截图，不声称逐像素动态视频对比度或持续性能已测。
 
-F11 did not change the viewport in this run; the native evidence covers normal and maximized windows, while native full screen is unverified. Two renderer crashes occurred earlier in the session; logs give no faulting module and the cause remains undetermined. No further crash was observed during the final native run. This is not evidence that the earlier crash cause was repaired.
+Checks and screenshots from 2026-10-02 and 2026-10-03 concern earlier visuals outside the current package and cannot validate 0.1.3.
 
-本次 F11 未改变视口；原生证据覆盖普通窗和最大化，原生全屏尚未验证。会话前段发生过两次渲染进程崩溃，日志未给出故障模块，原因尚未确定；最终原生测试未出现新增崩溃，不能据此声称已修复此前崩溃原因。
+## Limits and next gate / 验证边界与下一步
 
-Static package checks establish resource presence, path safety, licensing labels and file identity. They do not establish legal ownership, all host-version compatibility, external model inference, provider streaming behavior, absent plugin behavior or human visual acceptance. Official catalog/build gates, real-host captures and maintainer review are separate checks.
+No new application launch, restart or native desktop test was performed for 0.1.3. The next native gate is inspection of the exact installed files on the user's next normal launch, including message readability and layout. Web GUI evidence cannot replace that gate.
 
-静态包检查验证资源、路径安全、许可标记与文件一致；不证明法律权属、全部宿主版本兼容、外部模型推理、供应商流式行为、未安装插件行为或用户视觉验收。官方目录／构建、真实宿主截图和维护者审核分别记录。
+本版未启动、重启或重新测试原生程序。下一原生门禁是在用户下次正常启动后核验实际安装的 0.1.3 布局与消息可读性；Web GUI 通过不能替代原生测试。
+
+Native fullscreen remains unverified. Two earlier renderer crashes have an undetermined cause; available logs give no faulting module. No further crash in the historical final native run does not prove a cause was fixed.
+
+原生全屏仍未验证；此前两次渲染进程崩溃原因尚未确定，日志未给出故障模块。本次 CSS 修复不宣称修复崩溃原因。
+
+Scene/WebGL/webpage backgrounds, manual background-priority branches and sustained performance remain unverified. The reference Wallpaper Engine artwork is private QA material and is excluded from public previews and submission files. Local upstream checks use Windows / Node 24.13.0 / pnpm 10.32.1; upstream CI uses Ubuntu / Node 22 and must be read separately. L3 suffix selectors retain their compatibility boundary.
+
+Static package checks establish resource presence, path safety, licensing labels and identity. They do not establish legal ownership, external model inference, provider-specific streaming, absent plugins or human acceptance. Source/static checks, real-host captures, installed-file verification, maintainer review and Workshop listing are separate gates.

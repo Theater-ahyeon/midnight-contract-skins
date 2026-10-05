@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-一套独立的纯素材皮肤，为 Deepseek Harness Web GUI 提供黑金皮革侧栏、金属契约徽记、绯红邀约底板、蓝宝石信封输入框和羊皮纸入口。0.1.2 合并为单一皮肤，使用新生成的无人风景，恢复默认输入区位置，并改善动态壁纸上的消息可读性。
+一套独立的纯素材皮肤，为 Deepseek Harness Web GUI 提供黑金皮革侧栏、金属契约徽记、绯红邀约底板、蓝宝石信封输入框和羊皮纸入口。0.1.3 沿用 0.1.2 引入的无人风景与既有 UI 素材，为 Wallpaper Engine 下的长回复保留阅读遮罩，只在实际助手正文上绘制一层装饰框，并将分析摘要行恢复为使用原生布局的平面底板。
 
 皮肤 ID 为 `midnight-contract`，显示名为 **零点契约 / Midnight Contract**。[详细说明](skins/midnight-contract/README.zh.md)记录界面组件及接入范围。
 
@@ -12,7 +12,7 @@
 | --- | --- |
 | ![亮色界面](skins/midnight-contract/preview/light.jpg) | ![暗色界面](skins/midnight-contract/preview/dark.jpg) |
 
-另见[窄屏界面](skins/midnight-contract/preview/mobile-root.png)。截图来源、宿主版本与 0.1.2 当前检查状态见[验证说明](skins/midnight-contract/VERIFICATION.md)。旧版测试和截图不证明新背景已通过验收。
+另见[窄屏界面](skins/midnight-contract/preview/mobile-root.png)。预览已基于最终 0.1.3 CSS 重新拍摄；空会话画面与 0.1.2 的图片字节相同。本版 Web GUI 验证通过，原生 0.1.3 尚未复测。版本、来源及检查边界见[验证说明](skins/midnight-contract/VERIFICATION.md)。
 
 ## 安装与恢复
 
@@ -45,7 +45,7 @@ cp -R skins/midnight-contract "$HOME/.dsh/skins/"
 
 独立 CSS 与仓库代码使用 [Apache-2.0](LICENSE)。背景、UI 图片及相关预览按 `LicenseRef-Personal-NonCommercial-Artwork` 仅供个人非商业使用。代码许可不授予图片商业使用权或第三方权益。项目与 dsh-skins、维护者及 Deepseek Harness 无官方关联或背书；权利人提出异议时移除相关素材并配合下架。
 
-无人背景于 2026-10-05 通过 Codex 内置 image_gen 新生成，用户指定的 Steam 创意工坊壁纸仅作为视觉参考，不复制其素材进入分发包，也不主张其所有权。UI 图片沿用已有 AI 生成素材；公开 UI 提示词是明确标记的编辑摘要，而非历史请求逐字回执。详见[NOTICE](skins/midnight-contract/NOTICE.md)、[来源声明](skins/midnight-contract/SOURCE-DECLARATION.md)、[文件哈希](skins/midnight-contract/asset-provenance.json)及[提示词记录](skins/midnight-contract/generation-prompts.json)。确切模型名和请求编号不作推测。
+无人背景于 2026-10-05 通过 Codex 内置 image_gen 生成，并于 0.1.2 引入；0.1.3 保留原图片像素、生成日期和 SHA-256。用户指定的 Steam 创意工坊壁纸仅作为视觉参考，不复制其素材进入分发包，也不主张其所有权。UI 图片沿用已有 AI 生成素材；公开 UI 提示词是明确标记的编辑摘要，而非历史请求逐字回执。详见[NOTICE](skins/midnight-contract/NOTICE.md)、[来源声明](skins/midnight-contract/SOURCE-DECLARATION.md)、[文件哈希](skins/midnight-contract/asset-provenance.json)及[提示词记录](skins/midnight-contract/generation-prompts.json)。确切模型名和请求编号不作推测。
 
 上游 dsh-skins 的契约与脚手架归属、BSD-3-Clause 全文及版权保留在[第三方声明](THIRD-PARTY-NOTICES.md)。来源声明与自动检查不能代替法律权利核验。
 

@@ -309,8 +309,7 @@ body [data-composer-card] :is([role='menu'], [role='listbox'], [class*='_menu'],
   border-image: var(--mc-dossier) 150 / 8px / 0 stretch;
 }
 body [data-dsh-surface='settings'] [class*='_providerCard'],
-body [data-dsh-surface='settings'] [class*='_setupCard'],
-body [data-dsh-part='message-body'] {
+body [data-dsh-surface='settings'] [class*='_setupCard'] {
   border: 10px solid transparent;
   border-image: var(--mc-dossier) 150 / 10px / 0 stretch;
   background-color: var(--mc-panel);
@@ -321,6 +320,8 @@ body [data-chat-flow-kind='assistant-step'] [class*='_body'] {
   padding: 16px 20px;
   color: var(--mc-ink);
   background: var(--mc-panel);
+  /* Wallpaper surface detection must preserve the message reading matte. */
+  background-color: var(--mc-panel) !important;
   border: 10px solid transparent;
   border-image: var(--mc-dossier) 150 / 10px / 0 stretch;
   border-radius: 0;
@@ -330,7 +331,7 @@ body [data-chat-flow-kind='assistant-step'] [class*='_body'] {
   --dsw-alias-label-secondary: var(--mc-secondary);
   --dsw-alias-label-tertiary: var(--mc-tertiary);
 }
-body [data-chat-flow-kind='assistant-step'] [class*='_markdown'] :is(h1, h2, h3) {
+body [data-chat-flow-kind='assistant-step'] [class*='_body'] :is(h1, h2, h3) {
   font-family: var(--mc-serif);
   letter-spacing: 0.06em;
 }
@@ -352,12 +353,15 @@ body [data-chat-flow-kind='tool-call'] [data-tool] [data-disclosure-row='true'] 
   padding: 6px 10px;
   color: var(--mc-ink);
 }
-body [data-chat-flow-kind='tool-call'] button[class*='_fileLink'],
-body button[data-process-activity] {
+body [data-chat-flow-kind='tool-call'] button[class*='_fileLink'] {
   background: var(--mc-action) center / 100% 210% no-repeat #12131d;
   color: #f5e8d2;
   border: 1px solid #caa77580;
   border-radius: 3px;
+}
+body button[data-process-activity] {
+  background: var(--mc-panel);
+  color: var(--mc-ink);
 }
 body button[data-turn-process] {
   min-height: 40px;
@@ -585,8 +589,7 @@ body [data-dsh-surface='settings'] :is([class*='_navCell'], [class*='_navLabel']
 body [data-dsh-surface='settings'] :is(button[class*='_primaryButton'], button[class*='_secondaryButton'], button[class*='_addButton'], button[class*='_addModelButton']),
 body [data-slot='sidebar.right.tab.guide.entry'] > button,
 body [data-slot='sidebar.right.tab.guide'] button,
-body [data-chat-flow-kind='tool-call'] button[class*='_fileLink'],
-body button[data-process-activity] {
+body [data-chat-flow-kind='tool-call'] button[class*='_fileLink'] {
   background-size: auto 170%;
   line-height: 1.5;
 }
