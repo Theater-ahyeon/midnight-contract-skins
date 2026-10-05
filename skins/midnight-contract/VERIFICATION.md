@@ -1,45 +1,53 @@
 # Verification / 验证说明
 
-Actual captures from the official DSH 0.1.7-rc.1 Web GUI in an isolated profile on 2026-10-02. They are browser screenshots, not generated mockups. Both themes were exercised at 1440×900 and 390×844.
+Version / 版本: 0.1.2. Updated / 更新: 2026-10-06 (Asia/Shanghai).
 
-## GUI evidence
+This revision replaces the previous background with a new landscape without characters and updates the package descriptions and artwork license name. UI ornament files are retained. CSS restores the host composer layout, removes injected narrative text, fixes message readability, fits the workspace frame to its scroll region, removes closed-panel residual corners and separates the Windows brand icon and text. The Windows titlebar shell now allows the skin background to show. Previous screenshots are excluded from the new preview set.
 
-- The two-skin interaction matrix passed 80 checks and two restoration checks: settings/models, opaque menus, actual sapphire switch toggle/restore, drafts, sidebar collapse/reopen, details expansion and persisted activation.
-- A separate eight-case conversation matrix exercised real session messages, Markdown, code, tables and actual readonly read-tool receipts. Long conversations reach the tail; long code scrolls inside its code block without page overflow.
-- The conversation content is clearly labeled a deterministic local OpenAI SSE protocol fixture, not model inference. It went through the official Agent, tool execution, session journal and renderer; no DOM injection or external model call was used. The temporary provider and dummy test credential were removed.
-- Computed styles and assertions confirm the generated dossier material on actual assistant/tool/code nodes and field-bed material on code banners. Zero browser page errors, zero failed asset requests in the interaction matrix and zero conversation page overflow.
-- Default/no-skin switching removes Midnight Contract styles. Both test helpers restore the original QA skin/theme. Standard previews are direct browser JPEGs; state evidence is native PNG output.
+本版换用新生成的无人风景，并更新包描述与图片许可名称。UI 装饰沿用；CSS 恢复默认输入区布局，移除注入的叙事文案，修复消息可读性、工作区书框范围、闭合详情残角和 Windows 标志重叠，并让桌面壳正确显示皮肤背景。新预览不包含旧版截图。
 
-Machine-readable evidence: [gui-verification.json](gui-verification.json). Screens: [preview/](preview/). Design mapping: [VISUAL-CONTRACT.md](VISUAL-CONTRACT.md).
+## Current evidence / 本版证据
 
-## Automated gates and boundaries
+| Gate | 0.1.2 status |
+| --- | --- |
+| Background identity | SHA-256 matches the packaged image, asset-provenance.json, generation record and validator's pinned digest |
+| Package checks | JavaScript syntax, 18/18 validator tests, 69 local documentation links and 22 CSS asset references pass |
+| Official build and regression gates | Build, committed-lib consistency, hooks registry and typecheck pass; Node script tests 51/51 and Vitest 656/656 (60 files) pass |
+| Official catalog/CSS gates | Final synchronized midnight-contract v0.1.2 validates; catalog/CSS safety pipeline passes for all 58 repository skins; hooks registry passes (2026-10-06) |
+| Actual host previews | Official DSH 0.1.7-rc.1 isolated GUI: light/dark at 1440x900 and 390x844, 40/40 interaction checks and 2/2 restoration checks pass; no browser errors or failed asset requests |
+| Composer position | Light/dark composer and stack x/y/width/height match blue-fantasy exactly; against no skin only y differs by 0.5px, all other bounds match |
+| Workspace overflow | 20 real workspace groups scroll inside the frame at 1440 and 1920 widths; list/frame remain above settings; temporary registrations removed |
+| Brand and panel corners | Icon/text gap is 6px; closed right panels have no border image at 1440, 1920 and 390 widths; open-panel frame remains |
+| Native Windows desktop | Actual 0.2.0-rc.2 / skin center 0.4.4: normal 1280x820 and maximized 1920x1032 inspected with the skin background; installed CSS and computed styles verified |
+| Native workspace overflow | Six existing groups expanded, list 458px / content 1269px, reaches scrollTop 811; list bottom 846px remains above footer 876px; original group state restored |
+| Dynamic video background | Original local Wallpaper Engine video continues decoding and playing after skin switch in both themes; no duplicate video, mute retained, original preferences restored; composer text contrast 12.98:1 |
+| Human visual acceptance | Pending; automation cannot establish acceptance |
+| Workshop acceptance | Subject to upstream review and published catalog state |
 
-Catalog/CSS safety (55 entries), hooks, typecheck, build and generated-lib drift checks pass. Script tests pass 27/27. The untouched dsh-web baseline passes local typecheck, its complete test suite and docs:check; dsh-skins has no docs:check command.
+Preview targets: [light](preview/light.jpg), [dark](preview/dark.jpg), [narrow](preview/mobile-root.png). Current host receipt: [gui-verification.json](gui-verification.json). Source identity: [asset-provenance.json](asset-provenance.json). Layout mapping: [VISUAL-CONTRACT.md](VISUAL-CONTRACT.md).
 
-The contribution's earlier [Ubuntu CI](https://github.com/zhu1090093659/dsh-skins/actions/runs/36917452138) passed all 776 tests and repository gates. Current branch checks and review status are on [PR #33](https://github.com/zhu1090093659/dsh-skins/pull/35/checks).
+Fresh real-browser captures were taken on 2026-10-06. JPEG previews use quality 85 at device scale 1. Capture receipts pin the CSS and background hashes before and after each run. The original QA skin/theme was restored. Conversation checks reuse a real Agent journal created through a localhost deterministic SSE fixture and one read-only tool call; temporary dummy provider credentials were removed. No external provider credentials or model inference calls were used.
 
-Complete local gates passed on 2026-10-02 in an isolated Debian 12 / Node 22.23.3 / pnpm 11.24.0 environment on native ext4, launched by WSL 3.0.1 with kernel 6.18.40.1. `pnpm test --maxWorkers=1` passed all 776 tests across 53 files in 22.16 seconds; all 27 script tests and the catalog, hooks, typecheck and build gates also passed. Before/after SHA-256 checks found zero changes in 249 contribution source, test, script, generated-library, lockfile and skin files at `451544867635db545cf3fc098df0b024fd05c6e0`.
+本次真实浏览器截图拍摄于 2026-10-06；亮暗桌面与手机四组共 40 项交互、两项恢复检查通过，原验证皮肤与主题已恢复。回执核对运行前后的 CSS 与背景哈希，未放宽断言。会话测试复用 localhost 确定性 SSE 与真实只读工具产生的 Agent 日志；临时假 provider／凭据已清除，未使用外部供应商凭据或模型推理。
 
-The unchanged dsh-web baseline at `c42e3d249ad150a4202355b5dd8be72d390602c5` passed typecheck in all 18 workspace projects, complete tests (3244 passed, 14 pre-existing skips) and docs:check in the same local environment. Its test command was `pnpm --workspace-concurrency=1 -r --no-bail test --maxWorkers=1`; worker counts were bounded, with original assertions and timeouts intact. Before/after SHA-256 checks found zero changes in 891 baseline source, test, script and dependency-contract files. Git, ssh-keygen, real device bindings and a read-only proc mount provide the tools and process metadata required by the original suites.
+Native Windows screenshots were inspected separately in the actual desktop application. Its cached stylesheets required a build-query refresh; final computed styles match the installed revision. The user's requested skin background remains active, workspace expansion/scroll state was restored, and the agent-opened DevTools was closed. Private native screenshots contain user workspace information and are not redistributed.
 
-Earlier local attempts are historical failures: Windows reported symlink EPERM, the older Linux environment reported immediate directory-mtime/cache failures, and Linux fixtures on NTFS exceeded the original 30-second LRU scan timeout. The repaired environment clears task-owned residue from a backed-up full WSL distribution, uses separate task-owned ext4 images and upgrades WSL through the official installer with the contributor's explicit approval. Source, assertions, timeouts and the clock were not changed, and no tests were manually skipped. Native Windows symlink policy remains unchanged. These local results are separate from Ubuntu CI evidence.
+另在实际 Windows 桌面应用查看普通窗、最大化及六工作区滚动截图。缓存样式通过构建查询参数刷新后，计算样式与最终安装版本一致。按用户要求保留皮肤自带背景，恢复工作区展开及滚动状态，并关闭本次打开的开发工具。原生截图含用户工作区信息，仅作私有验证。
 
-External model inference, arbitrary provider streaming behavior and optional plugins absent from the minimal profile remain untested. Protocol-fixture captures establish actual UI rendering and tool execution, not model intelligence or provider compatibility. Automation does not imply user acceptance or perfect artistic equivalence.
+## Historical evidence / 历史证据
 
-## 中文说明
+Earlier checks and screenshots from 2026-10-02 and 2026-10-03 apply to prior visuals and package revisions. They are historical records outside this 0.1.2 package's current evidence and cannot validate the new background, current preview set or fresh Workshop submission. Current results must be recorded after the replacement assets are installed.
 
-两版真实宿主覆盖亮暗、桌面／手机、设置、模型、菜单、开关、草稿、侧栏与详情，并验证默认／无皮肤恢复。另有 8 组真实消息、代码、表格与只读工具回执检查，确认生图材质生效、长内容可滚动且页面不横溢出。对话明确标注本地协议 Fixture，经过官方 Agent 与真实工具，不代表真实模型推理；临时路由及虚拟测试凭据已清理。原背景哈希一致。
+2026-10-02 与 2026-10-03 的旧测试及截图属于此前视觉和包版本，作为本版当前证据之外的历史记录；不能证明新背景、当前截图或重新提交已经通过。本版结果需在新素材安装后记录。
 
-2026-10-02 修复运行环境后，本地原生 ext4 / Node 22 全套皮肤测试 776/776、脚本测试 27/27 通过；未修改的 dsh-web 基线完成全部 18 个工作区的类型检查、完整测试（3244 通过，14 项上游原有跳过）和文档检查。测试前后分别核验 249 与 891 个文件，源码、断言、超时及素材哈希一致。旧的 Windows 权限、目录时间戳和 NTFS 扫描失败保留为历史记录；没有改测试或时钟掩盖问题，也没有改变 Windows 原生符号链接策略。经授权升级 WSL 并使用隔离 ext4 环境后，本地门禁已完成，CI 仍单独记录。外部推理、未安装插件及用户视觉验收属于剩余验证边界。
+## Limits / 验证边界
 
-## 0.1.1 alignment revision
+Local upstream gates ran on Windows with Node 24.13.0 and pnpm 10.32.1; upstream CI uses Ubuntu and Node 22. Class-suffix L3 selectors pass the safety pipeline with its compatibility warnings. Original Wallpaper Engine artwork is used only for local private QA and is excluded from all previews and submission files.
 
-The latest 80-check GUI run additionally measures the exact Deepseek Harness wordmark fit, a portrait-free 64px brand row, workspace heading clearance from the folio spine and engraved rule, label/action vertical centers, and the Settings text clearance from the generated raven. The duplicate gear is hidden in the expanded sidebar and restored in the native compact rail. Checks wait for the actual collapsed state before inspecting the rail. All assertions pass in both skins, both themes and both viewport sizes. Direct component captures: [workspace](preview/workspace-dark.png), [Settings entry](preview/settings-entry-dark.png).
+F11 did not change the viewport in this run; the native evidence covers normal and maximized windows, while native full screen is unverified. Two renderer crashes occurred earlier in the session; logs give no faulting module and the cause remains undetermined. No further crash was observed during the final native run. This is not evidence that the earlier crash cause was repaired.
 
-The focused upstream CSS safety/class coverage/builtin tests pass 126/126 after these changes. Independent repository syntax, validator tests, docs and asset-integrity checks are distinct from the upstream host full-suite and CI history described above.
+本次 F11 未改变视口；原生证据覆盖普通窗和最大化，原生全屏尚未验证。会话前段发生过两次渲染进程崩溃，日志未给出故障模块，原因尚未确定；最终原生测试未出现新增崩溃，不能据此声称已修复此前崩溃原因。
 
-## Fresh upstream resubmission / 最新基线重新提交
+Static package checks establish resource presence, path safety, licensing labels and file identity. They do not establish legal ownership, all host-version compatibility, external model inference, provider streaming behavior, absent plugin behavior or human visual acceptance. Official catalog/build gates, real-host captures and maintainer review are separate checks.
 
-On 2026-10-03 the unchanged visual packages were submitted from upstream main 13deb94. Fresh local native-ext4 gates pass: 788/788 tests across 54 files, 51/51 script tests, 57-entry catalog, typecheck, hooks and build. Before/after hashes cover 1051 source, skin and evidence files with zero drift. Four packaged light/dark screenshots are copied byte-for-byte under evidence in the submission. Both AI-origin declarations and personal non-commercial character-art notices are included. The new Workshop submission is PR 35; the earlier PR 33 was closed, not merged.
-
-2026-10-03 基于上游最新 main 13deb94 重新提交，本地完整测试 788/788、脚本测试 51/51、57 套目录、类型、hooks 和构建通过，1051 文件测试前后无漂移。两套来源与非商业声明已补齐，四张真实亮暗截图原样提交到 evidence。新提交为 PR 35，原 PR 33 已关闭而未合并；图片和样式未改变。
+静态包检查验证资源、路径安全、许可标记与文件一致；不证明法律权属、全部宿主版本兼容、外部模型推理、供应商流式行为、未安装插件行为或用户视觉验收。官方目录／构建、真实宿主截图和维护者审核分别记录。

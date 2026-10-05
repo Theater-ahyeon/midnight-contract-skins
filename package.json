@@ -1,9 +1,9 @@
 {
   "name": "midnight-contract-skins",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "type": "module",
-  "description": "Two self-contained Midnight Contract skins for the Deepseek Harness skin-center v2 loader.",
+  "description": "A self-contained Midnight Contract skin for the Deepseek Harness skin-center v2 loader.",
   "license": "Apache-2.0",
   "packageManager": "pnpm@11.24.0",
   "engines": {

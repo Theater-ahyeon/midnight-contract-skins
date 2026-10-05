@@ -1,5 +1,5 @@
 /** L3 seams use official class suffixes, never hashed prefixes or labels.
- * Sidebar chrome, panel glyphs, composer card and empty-state masthead.
+ * Sidebar chrome, panel glyphs, composer card and message surfaces.
  * No DOM mutation, model override or executable hooks. */
 body::before {
   content: '';
@@ -12,9 +12,8 @@ body::before {
 }
 /* WE and manual background layers remain owned by the controller. */
 body[data-dsh-backdrop-active] { --dsw-alias-bg-base: transparent; }
-/* Only skin-owned media is positioned; manual and WE backgrounds retain
- * their own policy. Left anchoring preserves the supplied character. */
-body [data-dsh-skin-layer='background'] > img { object-position: left center; }
+/* The Windows titlebar shell paints sidebar fill over the backdrop. */
+body[data-dsh-backdrop-active] [data-dsh-frame] { background: transparent; }
 body :is([data-pane='sidebar'], [class*='_sidebarCol']) {
   color: #e8e1d6;
   background: var(--mc-leather) center / 100% 100% no-repeat #12131d;
@@ -44,7 +43,7 @@ body button[class*='_brand'] {
   min-height: 40px;
   min-width: 0;
   flex: 1;
-  padding: 0 0 0 38px;
+  padding: 0;
   background: var(--mc-logo) left center / 32px 32px no-repeat;
   border-radius: 0;
   display: flex;
@@ -54,6 +53,7 @@ body button[class*='_brand']::before { content: none; }
 body button[class*='_brand'] :is(svg, [class*='_brandIdentity']) { display: none; }
 body button[class*='_brand'][class*='_wide']::after {
   content: 'Deepseek Harness';
+  margin-left: 38px;
   color: #e0bd8a;
   white-space: nowrap;
   font: 16px / 1.5 Georgia, 'Times New Roman', serif;
@@ -138,14 +138,23 @@ body :is([data-pane='sidebar'], [class*='_sidebarCol']) [class*='_sessionRow'][a
   box-shadow: inset 2px 0 #caa775;
 }
 body [class*='_projectRow'] { color: #d7ba8c; }
-/* The archive remains the real workspace list, including its native scroll.
- * Fixed-width artwork keeps the book spine and feather proportions intact. */
+/* The frame follows the live scroll region; fixed-height artwork would let
+ * expanded workspaces continue below its painted bottom edge. */
 body [data-dsh-surface='sidebar'] [class*='_regionArea'] {
   position: relative;
+  isolation: isolate;
   margin: 8px 9px 0;
   padding: 42px 12px 30px 56px;
-  background: var(--mc-folio) center top / 260px auto no-repeat;
-  min-height: 130px;
+  min-height: 0;
+}
+body [data-dsh-surface='sidebar'] [class*='_regionArea']::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 0 solid transparent;
+  border-image: var(--mc-folio) 300 105 160 210 fill / 84px 29px 44px 58px / 0 stretch;
+  pointer-events: none;
+  z-index: -1;
 }
 body [data-dsh-surface='sidebar'] [class*='_sectionLabel'] {
   font-size: 15px;
@@ -201,9 +210,9 @@ body [data-slot='sidebar.settings'] button[aria-haspopup='dialog'] {
  * backdrop-filter belongs to the controller's body-level frost sibling. */
 body [data-composer-card] {
   position: relative;
+  isolation: isolate;
   border: 0;
   border-radius: 10px;
-  padding: 15px 24px 12px;
   background: #12131df5;
   color: #e8e1d6;
   --dsw-alias-label-primary: #e8e1d6;
@@ -227,14 +236,13 @@ body [data-composer-card]::before {
   border: 22px solid transparent;
   border-image: var(--mc-envelope) 95 105 95 105 / 22px 48px / 0 stretch;
   pointer-events: none;
-  z-index: 1;
+  z-index: -1;
 }
 body [data-composer-card]:focus-within { box-shadow: 0 0 0 1px #e0bd8a, 0 0 24px #caa77533; }
 body [data-composer-card] :is(textarea, [data-composer-input]) {
   color: #e8e1d6;
   caret-color: #9fd0ff;
   background: transparent;
-  min-height: 65px;
 }
 body [data-composer-card] [data-input-backdrop] { background: transparent; }
 body [data-composer-card] :is([class*='_placeholder'], textarea::placeholder) { color: #b5adab; }
@@ -249,9 +257,6 @@ body [role='dialog'] {
   --dsw-alias-label-caption: var(--mc-tertiary);
 }
 body [data-composer-card] [class*='_primary'] {
-  width: 44px;
-  height: 44px;
-  min-width: 44px;
   border-radius: 50%;
   border: 0;
   background: var(--mc-seal) center / contain no-repeat;
@@ -262,51 +267,12 @@ body [data-composer-card] [class*='_primary']:disabled { opacity: 0.5; }
 body [data-composer-card] [class*='_primary']:hover:not(:disabled) { filter: brightness(1.2); }
 body [data-composer-card] [class*='_primary']:focus-visible { outline: 2px solid #9fd0ff; outline-offset: 2px; }
 body [data-phase='hero'] [class*='_composerStack'] > svg {
-  width: 72px;
-  height: 72px;
   color: transparent;
   background: var(--mc-logo) center / contain no-repeat;
 }
 body [data-phase='hero'] [class*='_headline'] {
-  font-family: var(--mc-serif);
-  letter-spacing: 0.08em;
-}
-body [data-phase='hero'] [class*='_composerStack']::before {
-  content: '不必急着回答，先说出你的愿望。';
-  display: block;
-  padding: 8px 0 14px;
-  border-bottom: 1px solid var(--mc-rule);
-  color: #f5e8d2;
-  font: clamp(20px, 2vw, 28px) / 1.6 var(--mc-serif);
-  letter-spacing: 0.08em;
-  pointer-events: none;
-}
-/* Right-hand copy keeps the supplied left-hand character visible. The
- * native stack still shrinks when the details column is opened. */
-body [class*='_composerStack'][class*='_composerHero'] {
-  width: min(660px, calc(100% - 64px));
-  max-width: calc(100% - 64px);
-  align-self: flex-end;
-  margin-right: clamp(24px, 4vw, 64px);
-  padding: 28px 0;
-}
-body [data-phase='hero'] [class*='_headline'] {
   color: #f5e8d2;
   text-shadow: 0 2px 14px #000;
-  display: none;
-}
-body [data-dsh-surface='conversation']::before {
-  content: '零点契约 · 王座之上';
-  flex-shrink: 0;
-  height: 64px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(90deg, #12131d40, #12131dcc, #12131d80);
-  border-bottom: 1px solid #caa77566;
-  color: #f5e8d2;
-  font: 25px / 1.5 var(--mc-serif);
-  letter-spacing: 0.18em;
-  pointer-events: none;
 }
 body [class*='_composerStack'][class*='_composerHero'] {
   --dsw-alias-label-primary: #e8e1d6;
@@ -351,7 +317,7 @@ body [data-dsh-part='message-body'] {
 }
 /* The official 0.1.7 renderer has no message-body/tool-card part on these
  * nodes. Actual flow/slot/data markers bound the documented suffix seam. */
-body [data-chat-flow-kind='assistant-step'] > [data-slot='conversation.chat.node'] > [class*='_root'] > [class*='_body'] {
+body [data-chat-flow-kind='assistant-step'] [class*='_body'] {
   padding: 16px 20px;
   color: var(--mc-ink);
   background: var(--mc-panel);
@@ -359,6 +325,10 @@ body [data-chat-flow-kind='assistant-step'] > [data-slot='conversation.chat.node
   border-image: var(--mc-dossier) 150 / 10px / 0 stretch;
   border-radius: 0;
   min-width: 0;
+  --dsw-alias-label-primary: var(--mc-ink);
+  --dsw-alias-label-primary-bluish: var(--mc-ink);
+  --dsw-alias-label-secondary: var(--mc-secondary);
+  --dsw-alias-label-tertiary: var(--mc-tertiary);
 }
 body [data-chat-flow-kind='assistant-step'] [class*='_markdown'] :is(h1, h2, h3) {
   font-family: var(--mc-serif);
@@ -415,12 +385,10 @@ body [data-dsh-surface='conversation'] [data-code-block-banner='true'] {
 }
 body [data-dsh-surface='conversation'] [data-code-block-content='true'] { min-width: 0; }
 body [data-dsh-surface='details'] {
-  /* Explicit image widths paint the frame without opening a closed pane. */
-  border: 0 solid transparent;
-  border-image: var(--mc-dossier) 150 / 10px / 0 stretch;
+  border: 0;
 }
 /* The mobile rightbar is an absolute panel inside a zero-width column. */
-body [data-dsh-surface='details'] [class$='_panel'] {
+body [data-dsh-surface='details'] [data-sidebar-right-panel][data-sidebar-right-open='true'] {
   background: var(--mc-panel);
   color: var(--mc-ink);
   border: 0 solid transparent;
@@ -493,15 +461,6 @@ body [data-composer-card] button[class*='_add'] {
   border: 1px solid #caa77555;
 }
 body [data-composer-card] button[class*='_add']:hover { background-color: #3b3341; }
-body [data-phase='hero'] [class*='_composerStack']::after {
-  content: '每一个问题，都值得一场认真的交谈。';
-  color: #e8e1d6;
-  text-align: center;
-  font: 15px / 1.8 var(--mc-serif);
-  letter-spacing: 0.12em;
-  text-shadow: 0 1px 8px #000;
-  pointer-events: none;
-}
 body [data-dsh-surface='settings'][role='dialog'] {
   background: var(--mc-panel);
   border: 16px solid transparent;
@@ -513,14 +472,6 @@ body [data-dsh-surface='settings'] > [class*='_content'] > [class*='_header'] {
   min-height: 64px;
   gap: 12px;
   border-bottom: 1px solid var(--mc-rule);
-}
-body [data-dsh-surface='settings'] > [class*='_content'] > [class*='_header']::before {
-  content: '契约设定';
-  flex: 1;
-  color: var(--mc-ink);
-  font: 22px / 1.4 var(--mc-serif);
-  letter-spacing: 0.12em;
-  pointer-events: none;
 }
 body [data-dsh-surface='settings'] > nav[class*='_nav'] {
   background: var(--mc-leather) center / 100% 100% no-repeat #12131d;
@@ -557,23 +508,14 @@ body button[class*='_brand']:not([class*='_wide'])::after { content: none; }
 @media (max-width: 760px) {
   /* The drawer must paint above the composer and collapsed sidebar. */
   body [data-rightbar-col][data-dsh-surface='details'] { z-index: 120; }
-  body [data-dsh-surface='details'] [class$='_panel'] { background: var(--dsw-alias-bg-layer-1); }
-  body [data-chat-flow-kind='assistant-step'] > [data-slot='conversation.chat.node'] > [class*='_root'] > [class*='_body'] {
+  body [data-dsh-surface='details'] [data-sidebar-right-panel][data-sidebar-right-open='true'] { background: var(--dsw-alias-bg-layer-1); }
+  body [data-chat-flow-kind='assistant-step'] [class*='_body'] {
     padding: 12px 10px;
     border-width: 7px;
     border-image-width: 7px;
   }
   body::before { inset: 2px; border-radius: 6px; }
-  body [data-composer-card] { padding: 12px 15px 10px; }
   body [data-composer-card]::before { inset: -1px -5px; border-image-width: 16px 18px; }
-  body [class*='_composerStack'][class*='_composerHero'] {
-    width: calc(100% - 32px);
-    max-width: calc(100% - 32px);
-    margin-right: 16px;
-    padding: 20px 0;
-  }
-  body [data-phase='hero'] [class*='_composerStack']::before { font-size: 19px; letter-spacing: 0.08em; }
-  body [data-dsh-surface='conversation']::before { height: 48px; font-size: 18px; letter-spacing: 0.08em; }
 }
 @media (max-width: 600px) {
   body [data-dsh-surface='settings'][role='dialog'] {
@@ -613,7 +555,6 @@ body button[class*='_brand']:not([class*='_wide'])::after { content: none; }
   }
   body [data-dsh-surface='settings'] [class*='_options'] { padding: 12px 16px; }
   body [data-dsh-surface='settings'][role='dialog'] { border-image-width: 18px; border-width: 10px; }
-  body [data-dsh-surface='settings'] > [class*='_content'] > [class*='_header']::before { font-size: 17px; letter-spacing: 0.04em; }
   body [data-dsh-surface='settings'] [class*='_cubeRow'] { gap: 6px; flex-direction: row; }
   body [data-dsh-surface='settings'] [class*='_themeCube'] { min-width: 0; padding: 10px 8px; }
   body [data-dsh-surface='settings'] [class*='_modelRow'] { grid-template-columns: minmax(0, 1fr); }
@@ -661,11 +602,6 @@ body [data-dsh-surface='settings'] > [class*='_content'] > [class*='_header'] {
   body [data-dsh-surface='settings'] > [class*='_content'] > [class*='_header'] {
     gap: 6px;
     padding-inline: 10px;
-  }
-  body [data-dsh-surface='settings'] > [class*='_content'] > [class*='_header']::before {
-    white-space: nowrap;
-    font-size: 16px;
-    letter-spacing: 0;
   }
 }
 
@@ -726,8 +662,9 @@ body [data-dsh-surface='sidebar'] > [class*='_root'][class*='_collapsed'] [class
   margin: 4px;
   padding: 0;
   background: none;
-  min-height: 100px;
+  min-height: 0;
 }
+body [data-dsh-surface='sidebar'] > [class*='_root'][class*='_collapsed'] [class*='_regionArea']::before { content: none; }
 body [data-dsh-surface='sidebar'] > [class*='_root'][class*='_collapsed'] [data-slot='sidebar.settings'] button[aria-haspopup='dialog'] {
   padding: 8px;
   margin: 4px;

@@ -2,7 +2,7 @@
 
 The dsh-skins v2 contract and initial skin scaffolds originate from https://github.com/zhu1090093659/dsh-skins. This repository preserves the upstream BSD-3-Clause terms and copyright below. No upstream skin-center runtime or server is bundled here.
 
-The independently authored Midnight Contract CSS and package validator are offered under Apache-2.0. Generated artwork and related previews are for personal non-commercial use only, as recorded in each skin's NOTICE.md; the code license does not apply to artwork. Lu Mingze and Dragon Raja rights remain with Jiang Nan (Yang Zhi) and their respective original rights holders. This unofficial fan work is not affiliated with the repository or franchise rights holders, and affected artwork will be removed on rights-holder objection. Each skin retains its own code LICENSE and artwork NOTICE.md. Upstream attribution is preserved.
+The independently authored Midnight Contract CSS and package validator are offered under Apache-2.0. AI-generated backgrounds, interface ornaments and related previews are for personal non-commercial use only under LicenseRef-Personal-NonCommercial-Artwork, as recorded in each skin's NOTICE.md. The code license grants no commercial artwork use or third-party rights. The project is not officially affiliated with or endorsed by dsh-skins, its maintainers or Deepseek Harness. Affected artwork will be removed on rights-holder objection. Each skin retains its own code LICENSE and artwork NOTICE.md. Upstream attribution is preserved.
 
 ## Upstream dsh-skins license
 

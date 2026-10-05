@@ -1,18 +1,20 @@
 {
   "background": {
     "file": "assets/scene-approved.png",
-    "sha256": "bd359f0d98a2d3ac20ce246010a160492883dd21d3c494ebd765f85e3fbd9622",
-    "source": "AI-generated fan artwork created by Theater-ahyeon using image generation in Codex; contributor declaration recorded on 2026-10-03",
-    "authorization": "Contributor permits public distribution for personal non-commercial use only; this is not authorization from Dragon Raja franchise rights holders",
-    "processing": "Original file copied byte-for-byte; No background redraw; sidebar portrait removed",
-    "classification": "AI-generated fan artwork",
-    "creator": "Theater-ahyeon",
-    "service": "Codex image generation (contributor-confirmed); exact model and request identifier not available in the supplied file",
+    "sha256": "57369a1a218c13edee81748ec1450c4200e2a605dfaeb89629ddfdd94cd6ebed",
+    "source": "Original character-free landscape generated for the Theater-ahyeon project through Codex built-in image_gen on 2026-10-05",
+    "authorization": "Public distribution permitted for personal non-commercial use under NOTICE.md; no third-party rights granted",
+    "processing": "Replacement landscape for version 0.1.2; packaged file identity recorded by SHA-256",
+    "classification": "AI-generated landscape artwork",
+    "creator": "Theater-ahyeon project via Codex image_gen",
+    "service": "Codex built-in image_gen; exact underlying model and request identifier not recorded",
     "sourceDeclaration": "SOURCE-DECLARATION.md",
-    "character": "Lu Mingze / 路鸣泽",
-    "work": "Dragon Raja / 龙族 (Jiang Nan novel series)",
-    "rightsHolders": "Jiang Nan / 江南 (Yang Zhi / 杨治), and the respective original rights holders of the work, character and licensed adaptations",
-    "usage": "Personal non-commercial use only; unofficial; not affiliated with dsh-skins or the franchise rights holders; remove upon rights-holder objection"
+    "usage": "Personal non-commercial use only; no official affiliation or endorsement; remove affected assets on rights-holder objection",
+    "generatedOn": "2026-10-05",
+    "visualReference": {
+      "sourceUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3294660190",
+      "usage": "Style and color mood only; new architecture, viewpoint and foreground generated. Referenced wallpaper not redistributed; no ownership claimed."
+    }
   },
   "materials": {
     "service": "OpenAI image_gen",
@@ -35,9 +37,11 @@
       "waxseal-v4.webp",
       "workspace-folio.png"
     ],
-    "description": "Independently generated interface ornaments, reused from the contributor-owned Midnight Contract UI material set; quarter crest and invitation plate generated for this skin",
+    "description": "Retained AI-generated interface ornaments from the existing Midnight Contract material set; public prompt descriptions edited on 2026-10-05, not new UI generation or verbatim request receipts",
     "classification": "AI-generated interface materials",
     "sourceDeclaration": "SOURCE-DECLARATION.md",
-    "usage": "Personal non-commercial artwork use only; code license does not grant commercial rights to artwork"
+    "usage": "Personal non-commercial artwork use only; code license does not grant commercial rights to artwork",
+    "promptRecordDate": "2026-10-02",
+    "publicDescriptionsEditedOn": "2026-10-05"
   }
 }

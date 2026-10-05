@@ -5,8 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const ORIGINAL_BACKGROUND_SHA256 = Object.freeze({
-  'midnight-contract': 'bd359f0d98a2d3ac20ce246010a160492883dd21d3c494ebd765f85e3fbd9622',
-  'midnight-contract-city': '0c38d55d1e296f38cea3207a1bfe502aa40aff695b42f5639f13b553cbe9fac3',
+  'midnight-contract': '57369a1a218c13edee81748ec1450c4200e2a605dfaeb89629ddfdd94cd6ebed',
 });
 
 function record(value, label) {
@@ -118,7 +117,7 @@ export function checkSkin(root, {
   assert(/^[a-z][a-z0-9-]{0,31}$/.test(manifest.id), 'Invalid v2 skin id');
   assert.equal(manifest.id, expectedId, 'Manifest id must match the skin directory');
   assert(/^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?$/.test(manifest.version), 'Invalid semantic version');
-  assert.equal(manifest.license, 'LicenseRef-Personal-NonCommercial-Fan-Art', 'Artwork license must declare personal non-commercial fan-art use; Apache-2.0 covers code only');
+  assert.equal(manifest.license, 'LicenseRef-Personal-NonCommercial-Artwork', 'Artwork license must declare personal non-commercial artwork use; Apache-2.0 covers code only');
   const contributes = record(manifest.contributes, 'manifest.contributes');
   for (const key of Object.keys(contributes)) {
     assert(['stylesheet', 'patches', 'backgroundMedia'].includes(key), 'Unsupported or executable contribution in pure asset pack: ' + key);
@@ -199,7 +198,7 @@ export function checkRepository(root, { docsOnly = false } = {}) {
   if (!docsOnly) {
     const skinsRoot = resolveLocalResource(root, 'skins', { allowDirectory: true });
     const ids = readdirSync(skinsRoot, { withFileTypes: true }).filter((entry) => entry.isDirectory()).map((entry) => entry.name);
-    assert.deepEqual(ids.sort(), Object.keys(ORIGINAL_BACKGROUND_SHA256).sort(), 'Repository must contain the two declared skin directories');
+    assert.deepEqual(ids.sort(), Object.keys(ORIGINAL_BACKGROUND_SHA256).sort(), 'Repository must contain only the declared skin directories');
     for (const id of ids) results.push(checkSkin(path.join(skinsRoot, id)));
   }
   const localLinks = checkDocumentation(root);

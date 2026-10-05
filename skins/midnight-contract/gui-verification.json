@@ -1,8 +1,18 @@
 {
+  "skin": "midnight-contract",
+  "date": "2026-10-06",
+  "timezone": "Asia/Shanghai",
   "officialHostVersion": "0.1.7-rc.1",
   "runtime": "real isolated DSH Web GUI",
-  "skin": "midnight-contract",
-  "date": "2026-10-02",
+  "desktopShell": false,
+  "startedAt": "2026-10-05T17:57:48.496Z",
+  "finishedAt": "2026-10-05T17:58:39.669Z",
+  "sourceSha256": {
+    "skin.css": "d42c27d173689b86f42d5934268a9a17c3bf5fe1a21f8e3aa65d2d06170c5c85",
+    "patches.css": "024631c6a503c66174b29c88f0195ed1e4d0867841b4eacdec8d184930c0ff6c",
+    "assets/scene-approved.png": "57369a1a218c13edee81748ec1450c4200e2a605dfaeb89629ddfdd94cd6ebed"
+  },
+  "sourceStable": true,
   "cases": [
     {
       "theme": "light",
@@ -51,20 +61,7 @@
           "name": "details-expand",
           "status": "pass"
         }
-      ],
-      "alignment": {
-        "wordmark": "\"Deepseek Harness\"",
-        "portrait": "none",
-        "rowHeight": 64,
-        "wordmarkFits": true,
-        "labelWidth": 46.359375,
-        "labelClearsActions": true,
-        "labelClearsSpine": true,
-        "labelInsidePlaque": true,
-        "centersAligned": true,
-        "duplicateGearHidden": true,
-        "settingsTextClearsRaven": true
-      }
+      ]
     },
     {
       "theme": "light",
@@ -113,20 +110,7 @@
           "name": "details-expand",
           "status": "pass"
         }
-      ],
-      "alignment": {
-        "wordmark": "\"Deepseek Harness\"",
-        "portrait": "none",
-        "rowHeight": 64,
-        "wordmarkFits": true,
-        "labelWidth": 46.359375,
-        "labelClearsActions": true,
-        "labelClearsSpine": true,
-        "labelInsidePlaque": true,
-        "centersAligned": true,
-        "duplicateGearHidden": true,
-        "settingsTextClearsRaven": true
-      }
+      ]
     },
     {
       "theme": "dark",
@@ -175,20 +159,7 @@
           "name": "details-expand",
           "status": "pass"
         }
-      ],
-      "alignment": {
-        "wordmark": "\"Deepseek Harness\"",
-        "portrait": "none",
-        "rowHeight": 64,
-        "wordmarkFits": true,
-        "labelWidth": 46.359375,
-        "labelClearsActions": true,
-        "labelClearsSpine": true,
-        "labelInsidePlaque": true,
-        "centersAligned": true,
-        "duplicateGearHidden": true,
-        "settingsTextClearsRaven": true
-      }
+      ]
     },
     {
       "theme": "dark",
@@ -237,205 +208,386 @@
           "name": "details-expand",
           "status": "pass"
         }
-      ],
-      "alignment": {
-        "wordmark": "\"Deepseek Harness\"",
-        "portrait": "none",
-        "rowHeight": 64,
-        "wordmarkFits": true,
-        "labelWidth": 46.359375,
-        "labelClearsActions": true,
-        "labelClearsSpine": true,
-        "labelInsidePlaque": true,
-        "centersAligned": true,
-        "duplicateGearHidden": true,
-        "settingsTextClearsRaven": true
-      }
-    }
-  ],
-  "pageErrors": 0,
-  "failedRequests": 0,
-  "restoration": [
-    {
-      "steps": [
-        {
-          "name": "restore-blue-fantasy",
-          "details": {
-            "skin": "blue-fantasy",
-            "composer": {
-              "tag": "div",
-              "class": "uV2eYG_card",
-              "role": null,
-              "label": null,
-              "rect": {
-                "x": 469.296875,
-                "y": 443.5,
-                "w": 774.390625,
-                "h": 114
-              },
-              "visible": true,
-              "withinViewport": true,
-              "centerHit": true,
-              "display": "flex",
-              "position": "relative",
-              "fg": "rgb(219, 226, 242)",
-              "bg": "rgb(26, 34, 56)",
-              "overflow": "visible",
-              "scrollWidth": 774,
-              "clientWidth": 774
-            },
-            "screenshot": "restored-blue-fantasy.png",
-            "staleMidnightStylesheets": 0
-          },
-          "status": "pass"
-        },
-        {
-          "name": "restore-stock",
-          "details": {
-            "skin": null,
-            "composer": {
-              "tag": "div",
-              "class": "uV2eYG_card",
-              "role": null,
-              "label": null,
-              "rect": {
-                "x": 469.296875,
-                "y": 443,
-                "w": 774.390625,
-                "h": 114
-              },
-              "visible": true,
-              "withinViewport": true,
-              "centerHit": true,
-              "display": "flex",
-              "position": "relative",
-              "fg": "rgb(249, 250, 251)",
-              "bg": "rgb(44, 44, 46)",
-              "overflow": "visible",
-              "scrollWidth": 774,
-              "clientWidth": 774
-            },
-            "screenshot": "restored-stock.png",
-            "staleMidnightStylesheets": 0
-          },
-          "status": "pass"
-        }
       ]
     }
   ],
+  "summary": {
+    "cases": 4,
+    "steps": 40,
+    "failed": [],
+    "pageErrors": 0,
+    "failedRequests": 0
+  },
+  "restoration": [
+    {
+      "name": "restore-blue-fantasy",
+      "status": "pass",
+      "staleMidnightStylesheets": 0
+    },
+    {
+      "name": "restore-stock",
+      "status": "pass",
+      "staleMidnightStylesheets": 0
+    }
+  ],
   "originalRestored": true,
-  "conversation": {
-    "protocolFixture": true,
-    "realModelInference": false,
+  "captures": [
+    {
+      "file": "preview/light.jpg",
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "5924ec2948535b3e074f00b3635484127b618f5d50a0fd83389d84bfc9502baf"
+    },
+    {
+      "file": "preview/dark.jpg",
+      "theme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "sha256": "053dcfb2f28e79b530da5286f1c6830b1c4f62702fde3c063711bb860cd8b287"
+    },
+    {
+      "file": "preview/mobile-root.png",
+      "theme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sha256": "93d7e1807e425833f95d568a7fb012803f27698c1bcdf373db4ac79eb803e85a"
+    }
+  ],
+  "nativeGeometry": [
+    {
+      "theme": "light",
+      "baseline": "blue-fantasy",
+      "composerDelta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "stackDelta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "centerDelta": 0
+    },
+    {
+      "theme": "light",
+      "baseline": "official",
+      "composerDelta": {
+        "x": 0,
+        "y": 0.5,
+        "w": 0,
+        "h": 0
+      },
+      "stackDelta": {
+        "x": 0,
+        "y": 0.5,
+        "w": 0,
+        "h": 0
+      },
+      "centerDelta": 0
+    },
+    {
+      "theme": "dark",
+      "baseline": "blue-fantasy",
+      "composerDelta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "stackDelta": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "centerDelta": 0
+    },
+    {
+      "theme": "dark",
+      "baseline": "official",
+      "composerDelta": {
+        "x": 0,
+        "y": 0.5,
+        "w": 0,
+        "h": 0
+      },
+      "stackDelta": {
+        "x": 0,
+        "y": 0.5,
+        "w": 0,
+        "h": 0
+      },
+      "centerDelta": 0
+    }
+  ],
+  "rightPanelFrames": {
+    "cases": [
+      {
+        "name": "closed-1440",
+        "frames": [
+          {
+            "open": false,
+            "image": false
+          },
+          {
+            "open": false,
+            "image": false
+          }
+        ]
+      },
+      {
+        "name": "closed-1920",
+        "frames": [
+          {
+            "open": false,
+            "image": false
+          },
+          {
+            "open": false,
+            "image": false
+          }
+        ]
+      },
+      {
+        "name": "closed-390",
+        "frames": [
+          {
+            "open": false,
+            "image": false
+          },
+          {
+            "open": false,
+            "image": false
+          }
+        ]
+      },
+      {
+        "name": "open-1440",
+        "frames": [
+          {
+            "open": false,
+            "image": false
+          },
+          {
+            "open": true,
+            "image": true
+          }
+        ]
+      }
+    ],
+    "restored": true
+  },
+  "brandGeometry": {
+    "cases": [
+      {
+        "name": "brand-1440-expanded",
+        "wide": true,
+        "actualGeometry": {
+          "iconLeft": 24,
+          "iconRight": 56,
+          "textX": 62,
+          "textRight": 195.921875,
+          "gap": 6
+        },
+        "wordmarkContent": "\"Deepseek Harness\"",
+        "pageOverflow": false
+      },
+      {
+        "name": "brand-1440-collapsed",
+        "wide": false,
+        "wordmarkContent": "none",
+        "pageOverflow": false
+      },
+      {
+        "name": "brand-390-collapsed",
+        "wide": false,
+        "wordmarkContent": "none",
+        "pageOverflow": false
+      },
+      {
+        "name": "brand-390-expanded",
+        "wide": true,
+        "actualGeometry": {
+          "iconLeft": 24,
+          "iconRight": 56,
+          "textX": 62,
+          "textRight": 195.921875,
+          "gap": 6
+        },
+        "wordmarkContent": "\"Deepseek Harness\"",
+        "pageOverflow": false
+      }
+    ],
+    "restored": true
+  },
+  "workspaceScroll": {
+    "fixture": {
+      "workspaceCount": 20,
+      "sessionsPerWorkspace": 0,
+      "reason": "Official GUI omits non-current blank session rows, so real group rows provide overflow pressure"
+    },
     "externalModelCalls": 0,
     "domInjection": false,
-    "actualReadonlyToolReceipt": true,
-    "temporaryProviderRemoved": true,
-    "dummyCredentialRemoved": true,
-    "originalVisualSelectionRestored": true,
-    "pageErrors": 0,
+    "cases": [
+      {
+        "width": 1440,
+        "overflowY": "auto",
+        "scrollHeight": 1063,
+        "clientHeight": 483,
+        "scrollTop": 580,
+        "lastRowBottom": 766,
+        "listBottom": 782,
+        "regionBottom": 812,
+        "settingsY": 824
+      },
+      {
+        "width": 1920,
+        "overflowY": "auto",
+        "scrollHeight": 1063,
+        "clientHeight": 663,
+        "scrollTop": 400,
+        "lastRowBottom": 946,
+        "listBottom": 962,
+        "regionBottom": 992,
+        "settingsY": 1004
+      }
+    ],
+    "restoration": {
+      "createdSessionsArchived": true,
+      "createdWorkspaceRegistrationsRemoved": true,
+      "skinAndTheme": true
+    }
+  },
+  "localDynamicVideo": {
+    "cases": [
+      {
+        "theme": "light",
+        "secondsAdvanced": 0.7051539999999998,
+        "muted": true,
+        "readyState": 4
+      },
+      {
+        "theme": "dark",
+        "secondsAdvanced": 0.656965,
+        "muted": true,
+        "readyState": 4
+      }
+    ],
+    "restored": {
+      "wallpaper": true,
+      "skinAndTheme": true
+    },
+    "originalVideoRedistributed": false
+  },
+  "conversationFixture": {
+    "realModelInference": false,
+    "domInjection": false,
+    "realReadOnlyToolReceipt": true,
+    "externalModelCalls": 0,
+    "localProtocolRequestsThisRun": 0,
+    "source": "Recorded local deterministic SSE through the real DSH Agent and session journal",
     "cases": [
       {
         "theme": "light",
         "width": 1440,
-        "horizontalOverflow": false,
-        "conversationScroll": {
-          "top": 4547,
-          "height": 5306,
-          "client": 759
-        },
-        "codeScroll": [
-          {
-            "class": "shiki css-variables",
-            "moved": 564,
-            "scrollWidth": 1230,
-            "clientWidth": 666
-          }
-        ],
-        "generatedMaterialsAsserted": true,
-        "screenshots": [
-          "preview/conversation-head-light.png",
-          "preview/conversation-code-light.png",
-          "preview/conversation-tail-light.png"
-        ]
+        "minimumPrimaryTextContrast": 10.116849463618612
       },
       {
         "theme": "light",
-        "width": 390,
-        "horizontalOverflow": false,
-        "conversationScroll": {
-          "top": 7588,
-          "height": 8307,
-          "client": 719
-        },
-        "codeScroll": [
-          {
-            "class": "shiki css-variables",
-            "moved": 1017,
-            "scrollWidth": 1230,
-            "clientWidth": 213
-          }
-        ],
-        "generatedMaterialsAsserted": true,
-        "screenshots": [
-          "preview/mobile-conversation-head-light.png",
-          "preview/mobile-conversation-code-light.png",
-          "preview/mobile-conversation-tail-light.png"
-        ]
+        "width": 1920,
+        "minimumPrimaryTextContrast": 10.116849463618612
       },
       {
         "theme": "dark",
         "width": 1440,
-        "horizontalOverflow": false,
-        "conversationScroll": {
-          "top": 4547,
-          "height": 5306,
-          "client": 759
-        },
-        "codeScroll": [
-          {
-            "class": "shiki css-variables",
-            "moved": 564,
-            "scrollWidth": 1230,
-            "clientWidth": 666
-          }
-        ],
-        "generatedMaterialsAsserted": true,
-        "screenshots": [
-          "preview/conversation-head-dark.png",
-          "preview/conversation-code-dark.png",
-          "preview/conversation-tail-dark.png"
-        ]
+        "minimumPrimaryTextContrast": 11.942004804077309
       },
       {
         "theme": "dark",
-        "width": 390,
-        "horizontalOverflow": false,
-        "conversationScroll": {
-          "top": 7588,
-          "height": 8307,
-          "client": 719
-        },
-        "codeScroll": [
-          {
-            "class": "shiki css-variables",
-            "moved": 1017,
-            "scrollWidth": 1230,
-            "clientWidth": 213
-          }
-        ],
-        "generatedMaterialsAsserted": true,
-        "screenshots": [
-          "preview/mobile-conversation-head-dark.png",
-          "preview/mobile-conversation-code-dark.png",
-          "preview/mobile-conversation-tail-dark.png"
-        ]
+        "width": 1920,
+        "minimumPrimaryTextContrast": 11.942004804077309
       }
-    ]
+    ],
+    "restoration": {
+      "stockSessionModel": true,
+      "wallpaper": true,
+      "skin": true,
+      "theme": true,
+      "globalStockModelUnchanged": true
+    }
   },
   "limits": [
-    "No external model inference or streaming-provider compatibility test",
-    "Optional plugin rows absent in minimal profile",
-    "Automation does not establish human visual acceptance"
-  ]
+    "This receipt covers the real official 0.1.7-rc.1 Web GUI; native desktop-shell validation has a separate evidence record.",
+    "The messages, code and tool receipts are explicitly labeled deterministic local protocol fixtures; no external model was called.",
+    "Optional plugin rows were not installed in this isolated profile.",
+    "Automation does not establish human visual acceptance."
+  ],
+  "nativeDesktop": {
+    "date": "2026-10-06",
+    "hostVersion": "0.2.0-rc.2",
+    "skinCenterVersion": "0.4.4",
+    "platform": "Windows / Electron 44.0.0",
+    "installedPatchesSha256": "024631c6a503c66174b29c88f0195ed1e4d0867841b4eacdec8d184930c0ff6c",
+    "actualCssReload": "Reloaded installed skin stylesheet links using a build query; verified computed styles rather than relying on cached hard reload.",
+    "sourceAndInstalledAssetsMatch": true,
+    "background": {
+      "wallpaperEngineEnabled": false,
+      "skinBackgroundEnabled": true,
+      "naturalSize": [
+        1672,
+        941
+      ],
+      "frameFill": "rgba(0, 0, 0, 0)"
+    },
+    "viewports": [
+      {
+        "mode": "normal",
+        "width": 1280,
+        "height": 820
+      },
+      {
+        "mode": "maximized",
+        "width": 1920,
+        "height": 1032
+      }
+    ],
+    "brand": {
+      "textMarginLeft": "38px",
+      "visuallySeparated": true
+    },
+    "detailsClosedBorderImage": "none",
+    "workspaceScroll": {
+      "groups": 6,
+      "expanded": 6,
+      "clientHeight": 458,
+      "scrollHeight": 1269,
+      "scrollTop": 811,
+      "maxScrollTop": 811,
+      "listBottom": 846,
+      "footerTop": 876,
+      "restored": true
+    },
+    "screenshots": "Private native screenshots were visually inspected; public previews are from the isolated GUI without user data.",
+    "leftActive": {
+      "skin": "midnight-contract",
+      "background": "skin",
+      "window": "maximized",
+      "workspaceStateRestored": true
+    },
+    "limits": [
+      "F11 did not change the viewport in this run. Normal and maximized modes are verified; native full screen is unverified.",
+      "Two renderer crashes occurred earlier in the session. Logs report crashed without a faulting module; cause remains undetermined. No further crash was observed during the final native run.",
+      "Native testing does not establish all-version compatibility or human acceptance."
+    ]
+  }
 }

@@ -2,16 +2,15 @@
   "$schema": "https://schemas.linxin666.org/dsh-skin/v2.json",
   "skinManifestVersion": 2,
   "id": "midnight-contract",
-  "name": "零点契约 · 月下古堡",
-  "nameEn": "Midnight Contract · Moonlit Castle",
-  "version": "0.1.1",
+  "name": "零点契约",
+  "nameEn": "Midnight Contract",
+  "version": "0.1.2",
   "author": "Theater-ahyeon",
-  "tagline": "龙纹契约簿、四分之一生命徽章、鸦羽信笺与绯红封蜡",
-  "description": "以路鸣泽与龙族的契约意象定制 DSH：月下古堡原图、Deepseek Harness 品牌栏、黑金龙纹侧栏、金属徽记、绯红邀约底板、蓝宝石信封输入框和羊皮纸设置入口。亮暗主题保留真实会话、模型配置和工具交互。",
+  "tagline": "黑金契约簿、金属徽记、羽饰信笺与绯红封蜡",
+  "description": "为 DSH 定制的黑金契约界面：原创无人风景、Deepseek Harness 品牌栏、压纹皮革侧栏、金属徽记、绯红邀约底板、蓝宝石信封输入框和羊皮纸设置入口。亮暗主题保留真实会话、模型配置和工具交互。",
   "tags": [
     "midnight",
     "contract",
-    "dragon",
     "gold",
     "ornate",
     "leather"
@@ -38,9 +37,9 @@
       }
     }
   },
-  "license": "LicenseRef-Personal-NonCommercial-Fan-Art",
+  "license": "LicenseRef-Personal-NonCommercial-Artwork",
   "noticeUrl": "https://github.com/Theater-ahyeon/midnight-contract-skins/blob/main/skins/midnight-contract/NOTICE.md",
   "sourceUrl": "https://github.com/Theater-ahyeon/midnight-contract-skins/tree/main/skins/midnight-contract",
-  "attribution": "Lu Mingze from Dragon Raja by Jiang Nan (Yang Zhi); rights remain with Jiang Nan and respective original rights holders. AI-generated fan artwork created by Theater-ahyeon through Codex. Personal non-commercial use only; unofficial and not affiliated with dsh-skins; remove on rights-holder objection. Apache-2.0 covers CSS/code only. See NOTICE.md.",
+  "attribution": "AI-generated landscape and interface artwork for Theater-ahyeon through Codex image_gen. Personal non-commercial use only; no official affiliation with dsh-skins or Deepseek Harness. No third-party rights granted; remove affected assets on rights-holder objection. Apache-2.0 covers CSS/code only. See NOTICE.md.",
   "licenseUrl": "https://github.com/Theater-ahyeon/midnight-contract-skins/blob/main/skins/midnight-contract/NOTICE.md"
 }

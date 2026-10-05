@@ -1,25 +1,19 @@
 # Visual contract / 视觉契约
 
-The contributor's generated concept defines materials and component composition: a compact Deepseek Harness brand row, a dragon-leather contract ledger, burgundy invitation, parchment raven settings entry, sapphire envelope composer, framed dossiers and engraved controls. The contributor subsequently selected a different left-character castle scene, then requested a second city scene, plus a generated workspace folio and comprehensive generated component materials. Those later selections take precedence over the earlier right-character scene.
+Version 0.1.2 combines the existing black-and-gold contract components with an original character-free night landscape. UI ornament files are retained; text descriptions were generalized and are not evidence of new UI generation. CSS restores the native composer layout, removes injected narrative copy and applies message mattes over dynamic backgrounds.
 
-| Requirement | Implementation and evidence |
+| Requirement | Implementation |
 | --- | --- |
-| Original selected background | assets/scene-approved.png, byte hash in asset-provenance.json; both themes use the same file |
-| No sidebar portrait | Removed at the contributor's request; no reserved avatar height |
-| Deepseek Harness brand row | Generated logo with exact capitalization; 64px native row and native collapse action |
-| Contract sidebar | Generated dragon-leather folio, invitation plate and independent icons |
-| Workspace archive | Generated spine/feather/leather folio; live workspace/session list and scroll |
-| Sapphire composer | Envelope nine-slice, independent wax send seal, native input/model/permissions |
-| Contract settings | Generated dossier frame, dark engraved inputs, action plaques, sapphire switch; native sections and forms |
-| Existing conversation | Actual assistant-step/tool-call nodes, generated dossier panels and code banners; eight clearly labeled local protocol-fixture cases through the official Agent and readonly tool |
-| Header and details | Opaque native header for light-theme contrast; frame painting preserves zero width when details are closed |
-| Responsive variants | 1440×900 and 390×844, collapse/details/settings/menu checks; see VERIFICATION.md |
-| Uninstall and background ownership | Controller scoping; default/no-skin restoration; WE/manual background precedence retained |
+| Landscape background | assets/scene-approved.png; packaged SHA-256 in asset-provenance.json; both themes use the same file |
+| Brand row | Deepseek Harness wordmark, native collapse action and existing 64px layout |
+| Contract sidebar | Embossed leather folio, burgundy invitation plate, geometric metal insignia and independent icons |
+| Workspace archive | Nine-slice folio follows the actual scroll-region height; expanded workspaces stay inside the frame |
+| Sapphire composer | Envelope frame paints behind native controls; wax send seal retains native size and host layout determines its position |
+| Settings | Dossier frame, engraved input beds, action plaques and sapphire thumb around native sections |
+| Conversation | Decorative frames on the actual host message, tool and code surfaces |
+| Responsive layout | Existing desktop, collapsed and narrow styles; current validation in VERIFICATION.md |
+| Background ownership | Host controller preserves Wallpaper Engine/manual/skin priority |
 
-The latest scenes place the character on the left, so desktop empty-state copy/composer sit to the right. Host workspace/model names, dynamic messages, plugin availability, permissions and settings order remain their actual runtime values. The generated concept's sample provider actions, tool output and window controls do not create host capabilities. This is a skin of the official DSH GUI, with preserved interaction, rather than a screenshot used as a webpage.
+Workspace and model names, messages, plugin availability, permissions and settings order come from the host. Conversation mastheads and narrative prompts are not injected. Decorations do not create functions or replace live controls.
 
-Image identity, layout behavior, live controls and qualitative screenshot review are separate evidence. A green build or automated pixel score is not a declaration of perfect artistic equivalence or human acceptance. Original unlicensed Steam concept reference art is not redistributed.
-
-中文：概念图负责黑金契约的材质、构件和层级；用户后选的原图、工作区卷宗与组件生图要求优先。角色在左，桌面输入区移至右侧。保留真实宿主的文案、功能和交互，不把概念图里的示例接口当作已实现功能。原图哈希、运行布局、真实控件、视觉审阅分别记录，测试不会代替用户验收。
-
-Latest alignment: the 260px folio places its blank title plaque at offsets 42–78px. A 36px native header is seated below the engraved rule, with a 24px label centered beside the native action buttons. Expanded Settings uses the generated raven glyph with text inset 106px; the compact native rail keeps its gear and no parchment background.
+本版保留既有黑金契约构件，换用原创无人夜景。UI 图片沿用，文字整理不等同于重新生成素材。CSS 恢复默认输入区布局、移除注入的顶栏与叙事提示，并为动态背景下的消息添加阅读底板。宿主实际文案、功能和交互保持原有来源。图片哈希、自动检查、真实宿主截图与用户视觉验收分别记录；本版验证状态见 [VERIFICATION.md](VERIFICATION.md)。

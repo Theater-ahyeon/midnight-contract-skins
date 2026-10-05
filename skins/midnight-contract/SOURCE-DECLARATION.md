@@ -1,33 +1,34 @@
 # AI artwork source declaration / AI 素材来源声明
 
-Contributor / 贡献者: Theater-ahyeon. Declaration recorded / 声明记录日期: 2026-10-03 (Asia/Shanghai).
+Project contributor / 项目贡献者: Theater-ahyeon. Version / 版本: 0.1.2. Updated / 更新: 2026-10-06 (Asia/Shanghai).
 
-The contributor directly confirmed in the project conversation: “当前两套皮肤素材都是我自己用AI生成的” and “我之前在codex里生成的”. Both supplied backgrounds are classified as contributor-created AI-generated fan artwork made through Codex image generation. The UI material service is recorded as OpenAI image_gen in the existing generation prompts. This records the contributor's statement, not an independently retrieved generation receipt or official franchise permission.
+## Replacement background / 新背景
 
-贡献者直接确认两套素材均为其自行使用 AI 生成，背景此前在 Codex 中生成；UI 材质的既有生成提示词记录服务为 OpenAI image_gen。这是贡献者来源声明，不伪装成独立取得的生成回执或角色官方授权。
+The background is a newly generated character-free blue-violet cityscape with its own skyline, camera view and rooftop, generated for this project on 2026-10-05 through Codex's built-in image_gen. It replaces the earlier scene. Exact underlying model names and request identifiers are not inferred. The packaged file's SHA-256 establishes file identity, not legal ownership.
 
-## File identity / 文件核验
+The contributor selected [Steam Workshop visual reference 3294660190](https://steamcommunity.com/sharedfiles/filedetails/?id=3294660190). It guides illustration style and color mood only; the new architecture, camera view and foreground differ from that reference; the referenced wallpaper is not copied into the skin package, and this declaration does not claim ownership of it.
+
+背景为 2026-10-05 使用 Codex 内置 image_gen 为本项目生成的无人蓝紫城景，天际线、视角及屋顶构图为本次新生成，替换此前场景。确切底层模型名及请求编号不作推测；SHA-256 证明文件一致，不证明法律权属。
+
+贡献者选择 Steam 创意工坊项目 3294660190 仅作为画风与配色参考；本次生成的建筑、视角及前景构图不同。参考壁纸不复制进皮肤包，本声明不主张其所有权。
 
 - Background / 背景: [assets/scene-approved.png](assets/scene-approved.png)
-- SHA-256: `bd359f0d98a2d3ac20ce246010a160492883dd21d3c494ebd765f85e3fbd9622`
-- Processing / 处理: original supplied image retained byte-for-byte; no redraw / 供图原样保留，未重绘。
-- UI material prompts / UI 素材提示词: [generation-prompts.json](generation-prompts.json), [inherited-icon-prompts.json](inherited-icon-prompts.json).
-- Machine-readable source and material list / 来源与素材清单: [asset-provenance.json](asset-provenance.json).
+- Packaged digest and processing / 分发文件哈希及处理: [asset-provenance.json](asset-provenance.json)
+- Generation record / 生成记录: [generation-prompts.json](generation-prompts.json)
 
-Exact background generation date, model, original prompt and request identifier were not included with the supplied file and are not invented here. Contributor confirmation establishes the declared creation category; file hashes establish identity, not authorship or underlying character rights. Older Steam Workshop wallpaper is not part of this package.
+## Retained UI materials / 沿用 UI 材质
 
-供图未附带背景的确切生成日期、模型、原始提示词及请求编号，此处不编造这些信息。来源分类以贡献者确认记录为依据；哈希证明文件一致，不证明作者身份或角色权利。此前 Steam 创意工坊壁纸不在本包中。
+UI ornaments retain their recorded OpenAI image_gen source and the available UI prompt record date of 2026-10-02. The earlier contributor source declaration was recorded on 2026-10-03. These materials are reused; the 0.1.2 background replacement does not imply their regeneration.
 
-## Character and use / 角色与使用边界
+The public UI prompt descriptions were generalized and edited on 2026-10-05. They explain the retained materials but are not verbatim historical requests or independent generation receipts. Existing generated-file identifiers are retained where recorded. Missing model and request metadata is not fabricated.
 
-This is an unofficial fan skin depicting Lu Mingze (路鸣泽) from Dragon Raja (《龙族》), originally written by Jiang Nan (江南, Yang Zhi / 杨治). The original novel and character rights belong to Jiang Nan and the respective original rights holders; all rights in the work, character and any applicable licensed adaptations remain with their respective rights holders. The artwork and this character-themed skin are for personal, non-commercial use only. They are not affiliated with, endorsed by or officially produced by the dsh-skins repository, its maintainers, Deepseek Harness, or the Dragon Raja rights holders. Inclusion or hosting does not imply affiliation. If a rights holder objects, the contributor will promptly remove the affected artwork and cooperate with repository takedown. AI generation and a contributor declaration do not constitute permission from the franchise rights holders.
+UI 装饰沿用记录中的 OpenAI image_gen 来源，已有 UI 提示词记录日期为 2026-10-02；此前贡献者来源声明记录于 2026-10-03。本版复用材质，背景替换不表示 UI 重新生成。公开 UI 提示词于 2026-10-05 整理为通用描述，不是历史请求逐字记录或独立生成回执。已有生成文件标识按记录保留，缺失元数据不编造。
 
-本皮肤为《龙族》路鸣泽角色的非官方同人主题，原著作者／原著权利人为江南（杨治）；原著、角色及相关授权改编的权利归江南及各自原权利人所有。本皮肤及所含图片仅供个人非商业使用，不得用于商业用途。该同人创作与 dsh-skins 本仓库、仓库维护者、Deepseek Harness 及《龙族》权利人无关联，非官方出品且无官方背书；仓库收录或托管不表示关联或授权。权利人提出异议即移除相关素材，并配合仓库下架。AI 生成及贡献者来源声明不等同于取得《龙族》角色或作品的官方授权。
+- Public material descriptions / 公开材质描述: [generation-prompts.json](generation-prompts.json), [inherited-icon-prompts.json](inherited-icon-prompts.json)
+- Material list / 素材清单: [asset-provenance.json](asset-provenance.json)
 
-[Dragon Raja novel official account](https://www.weibo.com/cassellcollege?tabtype=newVideo), [Jiang Nan author interview](https://www.chinawriter.com.cn/n1/2018/0523/c405057-30006739.html). These links identify the original work and author; they are not image sources or a license.
+## Use and responsibility / 使用及责任
 
-## Contributor responsibility / 贡献者责任声明
+Backgrounds, UI images and related previews are for personal non-commercial use only under [NOTICE.md](NOTICE.md). Code uses the separate [Apache-2.0 LICENSE](LICENSE). No third-party rights or official endorsement is granted. As contributor Theater-ahyeon, I assume responsibility for the copyright and compliance of the submitted artwork and warrant that I have the right to provide, submit and distribute these assets within this stated personal non-commercial scope. I will promptly remove affected materials and cooperate with takedown on a rights-holder objection.
 
-As the contributor Theater-ahyeon, I assume responsibility for the copyright and compliance of the artwork submitted in these skins, and warrant that I have the right to provide, submit and distribute these assets within the personal non-commercial use and distribution scope stated above. This undertaking does not claim official authorization for the Dragon Raja original work or its characters. If a rights holder objects, I will promptly remove the affected assets and cooperate with takedown.
-
-作为贡献者 Theater-ahyeon，本人承担本次皮肤提交素材的版权与合规责任，并保证有权按照上述个人非商业使用及分发声明的范围提供、提交和分发这些素材。本声明不表示已取得《龙族》原著或角色的官方授权；如权利人提出异议，本人将及时移除相关素材并配合下架。
+背景、UI 图片及相关预览按 [NOTICE.md](NOTICE.md) 仅供个人非商业使用；代码使用单独的 [Apache-2.0 LICENSE](LICENSE)。不授予第三方权益或官方背书。作为贡献者 Theater-ahyeon，本人承担本次提交素材的版权与合规责任，并保证有权按声明范围提供、提交和分发这些素材；权利人提出异议时及时移除相关素材并配合下架。
